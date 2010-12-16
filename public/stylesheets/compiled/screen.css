@@ -1,0 +1,206 @@
+/* line 14, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 4, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+@import url(fancy-buttons.css);
+/* line 1, ../../../app/stylesheets/partials/_base.sass */
+#container {
+  width: 780px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 3, ../../../app/stylesheets/partials/_base.sass */
+#container header {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 780px;
+}
+/* line 138, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container header {
+  overflow-x: hidden;
+}
+/* line 5, ../../../app/stylesheets/partials/_base.sass */
+#container #center {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 780px;
+}
+/* line 138, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #center {
+  overflow-x: hidden;
+}
+/* line 7, ../../../app/stylesheets/partials/_base.sass */
+#container #center .sidebar {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 230px;
+}
+/* line 138, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #center .sidebar {
+  overflow-x: hidden;
+}
+/* line 9, ../../../app/stylesheets/partials/_base.sass */
+#container #center .content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 530px;
+}
+/* line 138, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #center .content {
+  overflow-x: hidden;
+}
+/* line 11, ../../../app/stylesheets/partials/_base.sass */
+#container footer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 780px;
+}
+/* line 138, ../../../../../../../.rvm/gems/ruby-1.9.2-rc2@araso.de/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container footer {
+  overflow-x: hidden;
+}

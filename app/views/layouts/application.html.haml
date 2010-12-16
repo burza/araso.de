@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen'
+    = javascript_include_tag :all
+    = csrf_meta_tag  
+    %title Awesome Rails Solutions - Agiler Web Designer in Hamburg
+  %body
+    #container
+      %header
+        HEAD
+      #center
+        %section.sidebar
+          ASIDE
+        %section.content
+          = yield
+      %footer
+        FOOT
