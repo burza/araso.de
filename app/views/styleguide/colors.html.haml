@@ -1,0 +1,27 @@
+%h2.-sg Primary colors
+
+- %w(green dark-green light-green orange red).each do |color|
+  .-sg-color-box
+    .-sg-color-preview{:class => "-sg-color-#{color}"}
+    %p= "$#{color}"
+
+%h2.-sg Secondary colors
+
+- %w(black darkest-grey dark-grey medium-grey light-grey lightest-grey).each do |color|
+  .-sg-color-box
+    .-sg-color-preview{:class => "-sg-color-#{color}"}
+    %p= "$#{color}"
+
+%h2.-sg Feedback colors
+
+- %w(feedback-positive feedback-neutral feedback-negative).each do |color|
+  .-sg-color-box
+    .-sg-color-preview{:class => "-sg-color-#{color}"}
+    %p= "$#{color}"
+
+%h2.-sg Action colors
+
+- %w(action-standard action-cta).each do |color|
+  .-sg-color-box
+    .-sg-color-preview{:class => "-sg-color-#{color}"}
+    %p= "$#{color}"

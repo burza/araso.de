@@ -1,0 +1,16 @@
+!!!
+%html{html_attrs('de')}
+  %head
+    %title Styleguide
+    = stylesheet_link_tag "compiled/screen", "compiled/styleguide"
+    /[if lt IE 7]
+      = stylesheet_link_tag 'compiled/ie6.css', :media => 'screen, projection'
+
+    =# javascript_include_tag "vendor/modernizr-1.5.min", "vendor/requireplugins-jquery-1.4.2", :cache => true
+    :javascript
+      require({baseUrl: "/javascripts"}, ["boot"])
+
+  %body
+    #-sg-container
+      = render :partial => 'sg_navigation'
+      = yield

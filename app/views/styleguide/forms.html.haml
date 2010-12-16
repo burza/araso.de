@@ -1,0 +1,346 @@
+- @user = User.new
+- @user.valid?
+
+#container.-grid-debug
+
+  %h1 Rails model integration test
+  %p
+    Pflichtfelder sind mit einem
+    %abbr{:title => "muss ausgefüllt werden"} *
+    markiert.
+  = form_for @user, :html => {:class => "standard-rows"}, :builder => CatwalkFormBuilder do |f|
+    %ol
+      = f.step([:email]) do
+        = f.label :email, "E-Mail", :class => "step-title"
+        .step-content
+          = f.text_field :email
+          = f.error_label_if :email
+      = f.step([:firstname, :lastname]) do
+        .step-title Wie heißen Sie?
+        .step-content
+          = f.subglobal_errors([:firstname, :lastname])
+          .substep
+            = f.text_field :firstname, :size => 10
+            = f.error_label :firstname, "Vorname"
+          .substep
+            = f.text_field :lastname
+            = f.error_label :lastname, "Nachname"
+        .step-hint
+          %p Diese Angabe wird benötigt, um Sie zu identifizieren.
+
+  %h1 Benutzer
+  %p
+    Pflichtfelder sind mit einem
+    %abbr{:title => "muss ausgefüllt werden"} *
+    markiert.
+  %form.standard-rows
+    %ol
+      %li
+        %label.step-title
+          Anrede
+          %abbr{:title => "muss ausgefüllt werden"}> *
+        .step-content
+          %select
+            %option Herr
+            %option Frau
+      %li.-standard-row.-form-name
+        .step-title Wie heißen Sie?
+        .step-content
+          .substep
+            %input{:type => "text", :size => 10}
+            %label Vorname
+            %p.hint
+              Bitte maximal
+              %br
+              25 Zeichen.
+          .substep
+            %input{:type => "text"}
+            %label Nachname
+        .step-hint
+          %p Diese Angabe wird benötigt, um Sie zu identifizieren.
+      %li
+        %label.step-title
+          Geburtsdatum
+          %abbr{:title => "muss ausgefüllt werden"}> *
+        .step-content
+          %input{:type => "text", :size => 10}
+        .step-hint
+          %p Bestimmte Artikel sind erst ab 18 Jahren freigeben. Deshalb benötigen wir ihr Geburtsdatum.
+      %li
+        %label.step-title Über mich
+        .step-content
+          %textarea{:rows => 10, :cols => 30}
+          %p.hint Ein guter Profiltext ist nicht zu lang und nicht zu kurz. Eben genau richtig.
+      %li.error
+        %label.step-title E-Mail
+        .step-content
+          %input{:type => "text"}
+          %label.error-message E-Mail darf nicht leer sein.
+      %li.error
+        .step-title Newsletter
+        .step-content
+          %label
+            %input{:type => "checkbox", :id => "newsletter"}
+            Ich möchte den Newsletter erhalten
+          .subglobal-errors
+            %label.error-message{:for => "newsletter"}
+              %span Sie müssen den Newsletter bestellen um sich anmelden zu können.
+      %li
+        .step-title Finden Sie das hier gut?
+        .step-content
+          %label
+            %input{:type => "radio"}
+            Ja
+          %label
+            %input{:type => "radio"}
+            Nein
+      %li.no-title
+        .step-content
+          %button.btn-recommended{:type => "submit"} absenden
+          %a{:href => '#'} abbrechen
+
+#container.-grid-debug
+
+  %h1 Benutzer
+  %form.standard-columns-right
+    %ol
+      %li
+        %label.step-title Anrede
+        .step-content
+          %select
+            %option Herr
+            %option Frau
+      %li.-standard-row.-form-name
+        .step-title Wie heißen Sie?
+        .step-content
+          .substep
+            %input{:type => "text", :size => 10}
+            %label Vorname
+          .substep.last
+            %input{:type => "text"}
+            %label Nachname
+        .step-hint
+          %p Diese Angabe wird benötigt, um Sie zu identifizieren.
+      %li
+        %label.step-title Geburtsdatum
+        .step-content
+          %input{:type => "text", :size => 10}
+        .step-hint
+          %p Bestimmte Artikel sind erst ab 18 Jahren freigeben. Deshalb benötigen wir ihr Geburtsdatum.
+      %li
+        %label.step-title Über mich
+        .step-content
+          %textarea{:rows => 10, :cols => 30}
+          %p.hint Ein guter Profiltext ist nicht zu lang und nicht zu kurz. Eben genau richtig.
+      %li.error
+        %label.step-title E-Mail
+        .step-content
+          %input{:type => "text"}
+          %label.error-message E-Mail darf nicht leer sein.
+      %li.-form-address.error
+        .step-title
+          Adresse
+          %br
+          (Diese Formularelemente sind mit ihrem Anfang am Grid ausgerichtet.)
+        .step-content
+          .subglobal-errors
+            %label.error-message{:for => "street-number"}
+              %span Hausnummer muss angegeben werden.
+            %label.error-message{:for => "postal-code"}
+              %span PLZ muss angegeben werden.
+          .substep.street
+            %input{:type => "text"}
+            %label Straße
+          .substep.streetnumber.error.last
+            %input{:type => "text", :id => "street-number"}
+            %label.error-message{:for => "street-number"} Hausnummer
+          .substep.postalcode
+            %input{:type => "text", :id => "postal-code"}
+            %label PLZ
+          .substep.city.last
+            %input{:type => "text"}
+            %label Ort
+      %li
+        .step-title Newsletter
+        .step-content
+          %label
+            %input{:type => "checkbox"}
+            Ich möchte den Newsletter erhalten
+      %li
+        .step-title Finden Sie das hier gut?
+        .step-content
+          %label
+            %input{:type => "radio"}
+            Ja
+          %label
+            %input{:type => "radio"}
+            Nein
+      %li.no-title
+        .step-content
+          %button.btn-recommended{:type => "submit"} absenden
+          %a{:href => '#'} abbrechen
+
+#container.-grid-debug
+
+  %h1 Test für 2-spaltiges Formular
+  %form.two-column-test
+    %ol
+      %li
+        %label.step-title Anrede
+        .step-content
+          %select
+            %option Herr
+            %option Frau
+      %li.-standard-row.-form-name.last
+        .step-title Wie heißen Sie?
+        .step-content
+          .substep
+            %input{:type => "text", :size => 10}
+            %label Vorname
+          .substep.last
+            %input{:type => "text"}
+            %label Nachname
+        .step-hint
+          %p Diese Angabe wird benötigt, um Sie zu identifizieren.
+      %li
+        %label.step-title Geburtsdatum
+        .step-content
+          %input{:type => "text", :size => 10}
+        .step-hint
+          %p Bestimmte Artikel sind erst ab 18 Jahren freigeben. Deshalb benötigen wir ihr Geburtsdatum.
+      %li.last
+        %label.step-title Über mich
+        .step-content
+          %textarea{:rows => 10, :cols => 30}
+          %p.hint Ein guter Profiltext ist nicht zu lang und nicht zu kurz. Eben genau richtig.
+      %li.error
+        %label.step-title E-Mail
+        .step-content
+          %input{:type => "text"}
+          %label.error-message E-Mail darf nicht leer sein.
+      %li.-form-address.error.last
+        .step-title
+          Adresse
+          %br
+          (Diese Formularelemente sind mit ihrem Anfang am Grid ausgerichtet.)
+        .step-content
+          .subglobal-errors
+            %label.error-message{:for => "street-number"}
+              %span Hausnummer muss angegeben werden.
+            %label.error-message{:for => "postal-code"}
+              %span PLZ muss angegeben werden.
+          .substep.street
+            %input{:type => "text"}
+            %label Straße
+          .substep.streetnumber.error.last
+            %input{:type => "text", :id => "street-number"}
+            %label.error-message{:for => "street-number"} Hausnummer
+          .substep.postalcode
+            %input{:type => "text", :id => "postal-code"}
+            %label PLZ
+          .substep.city.last
+            %input{:type => "text"}
+            %label Ort
+      %li
+        .step-title Newsletter
+        .step-content
+          %label
+            %input{:type => "checkbox"}
+            Ich möchte den Newsletter erhalten
+      %li.last
+        .step-title Finden Sie das hier gut?
+        .step-content
+          %label
+            %input{:type => "radio"}
+            Ja
+          %label
+            %input{:type => "radio"}
+            Nein
+      %li.no-title
+        .step-content
+          %button.btn-recommended{:type => "submit"} absenden
+          %a{:href => '#'} abbrechen
+
+#container.-grid-debug
+
+  %h1 Test für alternative Spaltenanordnung
+  %form.two-column-ol-test
+
+    %ol.form-col
+      %li
+        %label.step-title Anrede
+        .step-content
+          %select
+            %option Herr
+            %option Frau
+      %li.-standard-row.-form-name
+        .step-title Wie heißen Sie?
+        .step-content
+          .substep
+            %input{:type => "text", :size => 10}
+            %label Vorname
+          .substep.last
+            %input{:type => "text"}
+            %label Nachname
+        .step-hint
+          %p Diese Angabe wird benötigt, um Sie zu identifizieren.
+      %li
+        %label.step-title Geburtsdatum
+        .step-content
+          %input{:type => "text", :size => 10}
+        .step-hint
+          %p Bestimmte Artikel sind erst ab 18 Jahren freigeben. Deshalb benötigen wir ihr Geburtsdatum.
+      %li
+        %label.step-title Über mich
+        .step-content
+          %textarea{:rows => 10, :cols => 30}
+          %p.hint Ein guter Profiltext ist nicht zu lang und nicht zu kurz. Eben genau richtig.
+
+    %ol.form-col.last{:start => 5}
+      %li.error
+        %label.step-title E-Mail
+        .step-content
+          %input{:type => "text"}
+          %label.error-message E-Mail darf nicht leer sein.
+      %li.-form-address.error
+        .step-title
+          Adresse
+          %br
+          (Diese Formularelemente sind mit ihrem Anfang am Grid ausgerichtet.)
+        .step-content
+          .subglobal-errors
+            %label.error-message{:for => "street-number"}
+              %span Hausnummer muss angegeben werden.
+            %label.error-message{:for => "postal-code"}
+              %span PLZ muss angegeben werden.
+          .substep.street
+            %input{:type => "text"}
+            %label Straße
+          .substep.streetnumber.error.last
+            %input{:type => "text", :id => "street-number"}
+            %label.error-message{:for => "street-number"} Hausnummer
+          .substep.postalcode
+            %input{:type => "text", :id => "postal-code"}
+            %label PLZ
+          .substep.city.last
+            %input{:type => "text"}
+            %label Ort
+      %li
+        .step-title Newsletter
+        .step-content
+          %label
+            %input{:type => "checkbox"}
+            Ich möchte den Newsletter erhalten
+      %li
+        .step-title Finden Sie das hier gut?
+        .step-content
+          %label
+            %input{:type => "radio"}
+            Ja
+          %label
+            %input{:type => "radio"}
+            Nein
+      %li.no-title
+        .step-content
+          %button.btn-recommended{:type => "submit"} absenden
+          %a{:href => '#'} abbrechen
