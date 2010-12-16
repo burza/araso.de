@@ -1,0 +1,151 @@
+@font-face
+  font-family: 'DroidSerifRegular'
+  src: url('/fonts/DroidSerif/DroidSerif-Regular-webfont.eot')
+  src: local('☺'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.woff') format('woff'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.ttf') format('truetype'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.svg#webfontEtSsk1JN') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'DroidSerifItalic'
+  src: url('/fonts/DroidSerif/DroidSerif-Italic-webfont.eot')
+  src: local('☺'), url('/fonts/DroidSerif/DroidSerif-Italic-webfont.woff') format('woff'), url('/fonts/DroidSerif/DroidSerif-Italic-webfont.ttf') format('truetype'), url('/fonts/DroidSerif/DroidSerif-Italic-webfont.svg#webfontNZohlgxV') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'DroidSerifBold'
+  src: url('/fonts/DroidSerif/DroidSerif-Bold-webfont.eot')
+  src: local('☺'), url('/fonts/DroidSerif/DroidSerif-Bold-webfont.woff') format('woff'), url('/fonts/DroidSerif/DroidSerif-Bold-webfont.ttf') format('truetype'), url('/fonts/DroidSerif/DroidSerif-Bold-webfont.svg#webfontKcmVwBB9') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'DroidSerifBoldItalic'
+  src: url('/fonts/DroidSerif/DroidSerif-BoldItalic-webfont.eot')
+  src: local('☺'), url('/fonts/DroidSerif/DroidSerif-BoldItalic-webfont.woff') format('woff'), url('/fonts/DroidSerif/DroidSerif-BoldItalic-webfont.ttf') format('truetype'), url('/fonts/DroidSerif/DroidSerif-BoldItalic-webfont.svg#webfont8zI8rTdy') format('svg')
+  font-weight: normal
+  font-style: normal
+
+
+$font-size: 14px
+$line-height: 18px
+
+$font-size-large: 16px
+$line-height-large: $line-height
+
+$font-size-small: 11px
+$line-height-small: $line-height
+
+=font-family
+  font-family: "DroidSerifRegular", "Verdana", sans-serif
+
+=font-family-monospace
+  font-family: "Andale Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Courier New", Courier, monospace
+
+// ----- //
+// Reset //
+// ----- //
+
+=mm-global-reset
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, font, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td
+    +reset-box-model
+    +reset-font
+  body
+    +reset-body
+  ol, ul
+    +reset-list-style
+  caption, th, td
+    +reset-table-cell
+  a img
+    +reset-image-anchor-border
+
+// Saves from a lot of pain when not used in IE7
+
+=reset-list
+  list-style: none
+  list-style:
+    position: outside
+
+// ------------ //
+// Font metrics //
+// ------------ //
+
+=line-height($line-height, $font-size)
+  line-height: $line-height / $font-size
+
+=font-metrics($font-size, $line-height)
+  font-size: $font-size
+  +line-height($line-height, $font-size)
+
+=typo-default
+  +font-family
+  +font-metrics($font-size, $line-height)
+  color: $font-color
+  font-weight: normal
+  text-decoration: none
+  margin: 0
+  padding: 0
+
+=typo-small
+  +font-family
+  +font-metrics($font-size-small, $line-height-small)
+  color: $font-color
+  font-weight: normal
+  text-decoration: none
+  margin: 0
+  padding: 0
+
+=typo-large
+  +font-family
+  +font-metrics($font-size-large, $line-height-large)
+  color: $font-color
+  font-weight: normal
+  text-decoration: none
+  margin: 0
+  padding: 0
+
+=h1
+  +font-metrics(24px, 24px)
+  margin-bottom: $line-height
+  font-family: "DroidSerifBold", Verdana, sans-serif
+
+=h2
+  +font-metrics(18px, 18px)
+  margin-bottom: $line-height
+  font-family: "DroidSerifBold", Verdana, sans-serif
+
+=h3
+  +font-metrics(16px, 16px)
+  margin-bottom: $line-height
+  font-family: "DroidSerifBold", Verdana, sans-serif
+
+=h4
+  +font-metrics($font-size, $line-height)
+  margin-bottom: $line-height
+  font-weight: bold
+
+=h5
+  +font-metrics($font-size, $line-height)
+  margin-bottom: $line-height
+  font-weight: bold
+
+=h6
+  +font-metrics($font-size, $line-height)
+  font-weight: bold
+
+// -------------------- //
+// Text-level semantics //
+// -------------------- //
+
+=simulated-quotes($opening, $closing)
+  &:before
+    content: $opening
+  &:after
+    content: $closing

@@ -1,16 +1,20 @@
 !!!
 %html
   %head
-    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen'
-    /[if lt IE 8]
-      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen'
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    /[if lt IE 7]
+      = stylesheet_link_tag 'compiled/ie6.css', :media => 'screen, projection'
+    /[if IE]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
     = javascript_include_tag :all
     = csrf_meta_tag  
     %title Awesome Rails Solutions - Agiler Web Designer in Hamburg
   %body
     #container
       %header
-        HEAD
+        %h1 Awesome Rails Solutions
       #center
         %section.sidebar
           ASIDE

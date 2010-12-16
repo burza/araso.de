@@ -1,0 +1,127 @@
+// input[type=text], textarea
+//   // Browsers, where textarea and textfield style differ
+//   // will have a slightly smaller textarea (namely FF Mac)
+//   // Customize the whole input element set if you feel so to fix it
+//   +padded-span(6, 12px)
+
+form.standard-base
+  +standard-base-typo(lighten($feedback-negative, 67%))
+  +standard-base-layout
+
+form.standard-rows
+  @extend form.standard-base
+  .step-content, .subglobal-errors
+    // +padded-column(8, $error-message-padding)
+    width: 367px
+  .step-hint
+    // +padded-column(6, $error-message-padding)
+    width: 143px
+
+form.standard-columns-left
+  @extend form.standard-rows
+  +padded-column(19, 20px)
+  .step-title
+    +padded-column(5, 10px)
+  .step-content
+    +column(8)
+  li.no-title .step-content
+    +padded-prepend(5, 10px)
+  .subglobal-errors
+    +span(8)
+  .step-hint
+    +padded-column(6, 10px)
+    +last
+
+form.standard-columns-right
+  @extend form.standard-columns-left
+  .step-title
+    text-align: right
+
+form.two-column-test
+  @extend form.standard-columns-right
+  +padded-column(24, 20px)
+  li, .form-col
+    +padded-column(12, 10px)
+    .step-title
+      +padded-column(3, 10px)
+    .step-content
+      +column(7)
+    &.no-title .step-content, li.no-title .step-content
+      +padded-prepend(3, 10px)
+    .subglobal-errors
+      +span(7)
+    .step-hint
+      +column(2)
+      +last
+  li.last, .form-col.last
+    +last
+    .step-title
+      +column(3)
+    .step-content
+      +column(7)
+    &.no-title .step-content, li.no-title .step-content
+      +padded-prepend(3, 10px)
+    .subglobal-errors
+      +span(7)
+    .step-hint
+      +padded-column(2, 10px)
+      +last
+    &.error, li.error
+      margin-left: 20px
+      margin-right: -20px
+      padding-left: 0
+      padding-right: 10px
+      .step-hint
+        margin-right: -10px
+
+form.two-column-ol-test
+  @extend form.standard-columns-right
+  +padded-column(24, 20px)
+  .form-col
+    +padded-column(12, 10px)
+    .step-title
+      +padded-column(3, 10px)
+    .step-content
+      +column(7)
+    li.no-title .step-content
+      +padded-prepend(3, 10px)
+    .subglobal-errors
+      +span(7)
+    .step-hint
+      +column(2)
+      +last
+  .form-col.last
+    +last
+    .step-title
+      +column(3)
+    .step-content
+      +column(7)
+    li.no-title .step-content
+      +padded-prepend(3, 10px)
+    .subglobal-errors
+      +span(7)
+    .step-hint
+      +padded-column(2, 10px)
+      +last
+    li.error
+      margin-left: 0
+      margin-right: -10px
+      padding-left: 0
+      padding-right: 10px
+      .step-hint
+        margin-right: -10px
+
+form
+  .-form-address
+    .step-content
+      +column(8)
+    .substep.street, .substep.city
+      +column(6)
+      input
+        +padded-span(6, 12px)
+    .substep.streetnumber, .substep.postalcode
+      +column(2)
+      input
+        +padded-span(2, 12px)
+    .substep.last
+      +last

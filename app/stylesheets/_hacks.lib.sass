@@ -1,0 +1,23 @@
+// Visible for IE <= 7
+=ie7-hack($property, $ie7-value)
+  ##{$property}: #{$ie7-value}
+
+// Visible for IE <= 6
+=ie6-hack($property, $ie6-value)
+  _#{$property}: #{$ie6-value}
+
+// this mixin has to be called last due to its usage of the ie8-hack mixin usage
+=gt-ie6-hack($property, $value)
+  +ie7-hack($property, $value)
+  +ie8-hack($property, $value)
+
+// Visible for IE = 8
+// this mixin has to be called last
+// @see: http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/
+=ie8-hack($property, $ie8-value)
+  #{$property}: #{$ie8-value}#{"\0/"}
+
+// Allows to apply horizontal padding for buttons
+// @see: http://www.mrkirkland.com/internet-explorer-submit-button-horizontal-padding/
+=ie7-button-fix
+  +ie7-hack('overflow', 'visible')

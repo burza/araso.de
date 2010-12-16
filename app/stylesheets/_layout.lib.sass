@@ -1,0 +1,21 @@
+.-grid-debug
+  background: transparent image_url("grid.png") repeat !important
+
+=padded-column($n, $padding, $last: false)
+  +column-base($last)
+  +padded-span($n, $padding)
+
+=padded-span($n, $padding)
+  width: $blueprint_grid_width * $n + $blueprint_grid_margin * ($n - 1) - $padding
+
+=padded-prepend($n, $padding)
+  padding-left: $blueprint_grid_outer_width * $n - $padding
+
+// Inspired by Yaml subtemplates
+=percent-column($percent)
+  .col-#{$percent/1%}
+    +float-left
+    width: $percent
+    &.last
+      +float-right
+      margin-left: -5px

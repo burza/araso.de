@@ -20,6 +20,53 @@ $blueprint_grid_margin: 20px
 
 @import "fancy-buttons"
 
+// ------------------ //
+// Local Dependencies //
+// ------------------ //
 
-@import partials/base
-@import partials/form
+@import "colors.lib"
+@import "typography.lib"
+@import "layout.lib"
+
+@import "hacks.lib"
+@import "forms.lib"
+@import "tables.lib"
+@import "banners.lib"
+
+
+// ----- //
+// Reset //
+// ----- //
+
++mm-global-reset
+
+// ---------- //
+// Components //
+// ---------- //
+
+@import "components/box"
+@import "components/autocomplete"
+
+// ----------- //
+// Site Styles //
+// ----------- //
+
+@import "typography"
+@import "layout"
+
+@import "graphics"
+@import "buttons"
+@import "feedback"
+@import "tables"
+@import "forms"
+@import "header"
+
+
+
+// -------------------- //
+// Page Specific Styles //
+// -------------------- //
+// Try to avoid this.
+
+@import "home"
+

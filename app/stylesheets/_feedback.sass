@@ -1,0 +1,35 @@
+=feedback-colors($color, $color-white: 0%, $color-black: 0%)
+  $blackened-color: mix($color, black, 100% - $color-black)
+  $whitened-color: mix($color, white, 100% - $color-white)
+  border-color: $blackened-color
+  background-color: $whitened-color
+  color: $blackened-color
+
+.feedback
+  +border-radius(4px)
+  padding: 1em
+  border: 1px solid
+  font-weight: bold
+  margin-bottom: $line-height
+  &.success
+    +feedback-colors($feedback-positive, 65%)
+  &.notice
+    +feedback-colors($feedback-neutral, 65%, 10%)
+  &.error
+    +feedback-colors($feedback-negative, 65%)
+
+#load-indicator
+  +border-radius(20px)
+  position: fixed
+  +ie6-hack("position", "absolute")
+  top: 255px
+  left: 50%
+  width: 200px
+  height: 90px
+  margin-left: -125px
+  margin-top: -125px
+  background: transparent image_url("catwalk/feedback_bg.png") repeat
+  .animation
+    width: 100%
+    height: 100%
+    background: transparent image_url("catwalk/feedback_animation.gif") center center no-repeat

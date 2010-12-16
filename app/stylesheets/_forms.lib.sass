@@ -1,0 +1,70 @@
+=standard-base-typo($color-error-bg: lighten($feedback-negative, 30%), $color-error: $feedback-negative)
+  abbr
+    color: $action-standard
+  .step-hint
+    +typo-small
+    color: $font-color-light
+  .substep label, label.error-message
+    +reset-box-model
+    +typo-small
+    color: $font-color-light
+    display: block
+    margin-bottom: $line-height/2
+  .subglobal-errors
+    margin-top: $line-height/4
+    margin-bottom: $line-height/2
+    label.error-message
+      border-left: 3px solid $color-error
+      padding-left: 10px
+      margin-bottom: 1px
+      +line-height(16px, $font-size-small)
+      span
+        border-bottom: 1px dotted
+  .hint
+    +typo-small
+    color: $font-color-light
+  .error
+    background-color: $color-error-bg
+    .error-message
+      color: $color-error
+
+=standard-base-layout
+  $error-message-padding: 10px
+  padding: 0 $error-message-padding
+  ol, ul
+    +reset-list
+  li
+    +reset-box-model
+    +pie-clearfix
+    padding:
+      top: 5px
+      bottom: 5px
+    margin-bottom: 2px
+  .step-title
+    display: block
+  .step-content
+    +pie-clearfix
+    +column-base(true)
+  .step-hint
+    +column-base(true)
+  li .substep
+    +float-left
+    margin-right: 10px
+  .subglobal-errors
+    +column-base(true)
+  .error
+    padding-left: $error-message-padding
+    margin:
+      left: -$error-message-padding
+      right: -$error-message-padding
+
+=mac-osx-styled-input-field($with-background: false)
+  // Rebuild of Mac OS X’s default text input fields
+  border:
+    bottom: 1px solid #E0E0E0
+    left: 1px solid #C1C1C1
+    right: 1px solid #C1C1C1
+    top: 1px solid #848484
+  padding: 3px 2px
+  @if $with-background
+    background: transparent image_url("catwalk/input_field_bg.png") left top repeat-x

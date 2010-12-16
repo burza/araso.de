@@ -1,0 +1,82 @@
+// +showgrid($image)
+
+
+body
+  background-color: $lightest-grey
+
+$image: "grid.png"
+  
+#container
+  +container
+  +showgrid($image)
+  min-height: 150px
+  header
+    +column(16, true)
+  #center
+    +column(16, true)
+    .sidebar
+      +column(5)
+    .content
+      +column(11, true)
+  footer
+    +column(16, true)
+
+
+
+
+
+
+
+
+.-layout-base
+  +column(20)
+  .-region-content
+    +column(14, true)
+  .-region-sidebar
+    +column(6)
+
+ 
+.-layout-padded-columns-demo
+  +column(20)
+  .-region-demo
+    +column(10)
+    &.last
+      +last
+
+.-layout-dashboard
+  +column(20)
+  .-region-column
+    +column(6)
+    &.last
+      +last
+
+
+.-layout-subgrid-demo
+  +column(20)
+  .-region-demo1
+    +column(12)
+  .-region-demo2
+    +column(8, true)
+
+.-layout-blog-box
+  @extend .box
+  +clearfix
+  .-region-teaser
+    +padded-column(6, $box-padding)
+  .-region-entry
+    +padded-column(6, $box-padding)
+    +last
+
+.-layout-image-box
+  @extend .box
+  +clearfix
+  .-region-image
+    +padded-column(5, $box-padding)
+  .-region-description
+    +column(4)
+  .-region-info
+    +padded-column(3, $box-padding)
+    +last
+
++percent-column(33%)
++percent-column(66%)

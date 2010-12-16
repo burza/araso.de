@@ -1,0 +1,90 @@
+h1.-sg
+  border-bottom: 1px dotted lighten(#727272, 40%)
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+  color: #222
+  font-size: 12px
+  font-weight: normal
+  margin: 0
+  line-height: 36px
+
+h2.-sg
+  font-size: 18px
+  margin:
+    bottom: 18px
+    top: 36px
+  font-weight: bold
+  clear: both
+
+a.-sg
+  color: #727272
+  text-decoration: none
+  &:visited, &.visited
+    color: #727272
+  &:focus, &.focus
+    color: #ff0000
+  &:hover, &.hover
+    color: #000000
+  &:active, &.active
+    color: #000000
+
+hr.-sg
+  clear: both
+  color: white
+  border: 0
+  height: 0
+
+// ---- //
+// Grid //
+// ---- //
+
+body
+  margin-bottom: 36px
+
+#-sg-container
+  width: 950px
+  margin: 0 auto 0 auto
+  .-sg-baseline-debug
+    background: transparent image_url("catwalk/baseline9.png") repeat
+  .-sg-main-col
+    float: left
+    display: inline
+    width: 620px
+    margin-right: 20px
+  .-sg-aside-col
+    float: left
+    display: inline
+    width: 310px
+
+// ---------- //
+// Navigation //
+// ---------- //
+
+#-sg-nav
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+  list-style: none
+  margin: 0 0 36px 0
+  padding: 0
+  overflow: hidden
+  border-bottom: 1px dotted lighten(#727272, 40%)
+  font-size: 15px
+  line-height: 36px
+  li
+    float: left
+    display: inline
+    margin: 0
+    padding-right: 20px
+
+// ------------- //
+// Color preview //
+// ------------- //
+
+.-sg-color-box
+  width: 110px
+  float: left
+  display: inline
+  margin-right: 10px
+  .-sg-color-preview
+    height: 110px
+  p
+    padding: 0 5px
+    font-weight: bold

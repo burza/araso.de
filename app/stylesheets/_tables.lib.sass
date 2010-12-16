@@ -1,0 +1,37 @@
+=standard-table
+  margin-bottom: 2 * $line-height
+  thead th
+    border-bottom: 1px solid $darkest-grey
+    padding-top: $line-height/4 - 1px
+  th
+    +h6
+    vertical-align: bottom
+  th, td
+    padding: ($line-height/4) 20px ($line-height/4) 10px
+  td.right
+    text-align: right
+  td.center
+    text-align: center
+  tfoot td
+    border-top: 1px solid $darkest-grey
+    padding-bottom: $line-height/4 - 1px
+
+=standard-table-baseline-strict
+  $top-td-padding: 1px
+  $bottom-td-padding: $line-height/2 - $top-td-padding
+  thead th
+    padding-top: $top-td-padding - 1px
+  th, td
+    padding: $top-td-padding 20px $bottom-td-padding 10px
+  tr.first
+    td, th
+      padding-top: $top-td-padding + $line-height/2
+  tfoot td
+    padding-bottom: $bottom-td-padding - 1px
+
+=standard-table-stripes($ie-workaround: false, $stripe-color: $lightest-grey)
+  tbody tr:nth-child(2n+1) td
+    background-color: $stripe-color
+  @if $ie-workaround
+    tbody tr.odd td
+      background-color: $stripe-color

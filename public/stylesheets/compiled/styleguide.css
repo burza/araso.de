@@ -1,0 +1,113 @@
+/* line 1, ../../../app/stylesheets/styleguide.sass */
+h1.-sg {
+  border-bottom: 1px dotted #d8d8d8;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #222222;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 36px;
+}
+
+/* line 10, ../../../app/stylesheets/styleguide.sass */
+h2.-sg {
+  font-size: 18px;
+  margin-bottom: 18px;
+  margin-top: 36px;
+  font-weight: bold;
+  clear: both;
+}
+
+/* line 18, ../../../app/stylesheets/styleguide.sass */
+a.-sg {
+  color: #727272;
+  text-decoration: none;
+}
+/* line 21, ../../../app/stylesheets/styleguide.sass */
+a.-sg:visited, a.-sg.visited {
+  color: #727272;
+}
+/* line 23, ../../../app/stylesheets/styleguide.sass */
+a.-sg:focus, a.-sg.focus {
+  color: red;
+}
+/* line 25, ../../../app/stylesheets/styleguide.sass */
+a.-sg:hover, a.-sg.hover {
+  color: black;
+}
+/* line 27, ../../../app/stylesheets/styleguide.sass */
+a.-sg:active, a.-sg.active {
+  color: black;
+}
+
+/* line 30, ../../../app/stylesheets/styleguide.sass */
+hr.-sg {
+  clear: both;
+  color: white;
+  border: 0;
+  height: 0;
+}
+
+/* line 40, ../../../app/stylesheets/styleguide.sass */
+body {
+  margin-bottom: 36px;
+}
+
+/* line 43, ../../../app/stylesheets/styleguide.sass */
+#-sg-container {
+  width: 950px;
+  margin: 0 auto 0 auto;
+}
+/* line 46, ../../../app/stylesheets/styleguide.sass */
+#-sg-container .-sg-baseline-debug {
+  background: transparent url('/images/catwalk/baseline9.png?1291209209') repeat;
+}
+/* line 48, ../../../app/stylesheets/styleguide.sass */
+#-sg-container .-sg-main-col {
+  float: left;
+  display: inline;
+  width: 620px;
+  margin-right: 20px;
+}
+/* line 53, ../../../app/stylesheets/styleguide.sass */
+#-sg-container .-sg-aside-col {
+  float: left;
+  display: inline;
+  width: 310px;
+}
+
+/* line 62, ../../../app/stylesheets/styleguide.sass */
+#-sg-nav {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin: 0 0 36px 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px dotted #d8d8d8;
+  font-size: 15px;
+  line-height: 36px;
+}
+/* line 71, ../../../app/stylesheets/styleguide.sass */
+#-sg-nav li {
+  float: left;
+  display: inline;
+  margin: 0;
+  padding-right: 20px;
+}
+
+/* line 81, ../../../app/stylesheets/styleguide.sass */
+.-sg-color-box {
+  width: 110px;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+/* line 86, ../../../app/stylesheets/styleguide.sass */
+.-sg-color-box .-sg-color-preview {
+  height: 110px;
+}
+/* line 88, ../../../app/stylesheets/styleguide.sass */
+.-sg-color-box p {
+  padding: 0 5px;
+  font-weight: bold;
+}

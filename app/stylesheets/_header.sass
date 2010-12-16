@@ -1,0 +1,26 @@
+header
+  font-size: 18px
+  padding: $line-height * 2 0px ($line-height * 2) + ($line-height / 2) 0px
+  a
+    color: $font-color
+    &:visited, &.visited
+      color: $font-color
+    &:hover, &.hover
+      color: $link-hover-color
+      border-bottom: 0px
+    &:active, &.active
+      color: $link-active-color
+      
+.logo
+  text-transform: uppercase
+  color: $font-color
+.additional
+  letter-spacing: -1px
+
+nav
+  text-align: right
+  color: $font-color
+  +clearfix
+  ol
+    +horizontal-list
+    +float-right

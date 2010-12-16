@@ -1,0 +1,206 @@
+body
+  +typo-default
+
+.typo-large
+  +typo-large
+
+p
+  margin-bottom: $line-height + 2
+  &.last
+    margin-bottom: 0
+
+// -------- //
+// Headings //
+// -------- //
+
+h1
+  +h1
+
+h2
+  +h2
+
+h3
+  +h3
+
+h4
+  +h4
+
+h5
+  +h5
+
+h6
+  +h6
+
+// ----- //
+// Lists //
+// ----- //
+
+ol
+  list-style:
+    position: outside
+  margin-bottom: $line-height
+  li li
+    margin-left: $line-height + 2
+
+ul
+  list-style:
+    position: outside
+  margin-bottom: $line-height
+  li li
+    margin-left: $line-height + 2
+
+dl
+  margin-bottom: 2 * $line-height
+  dt
+    +h6
+
+// ---------------- //
+// Grouping content //
+// ---------------- //
+
+hr
+  +reset-box-model
+  margin-bottom: $line-height - 1px
+  height: 1px
+  background-color: $lightest-grey
+
+pre
+  +font-family-monospace
+  margin-bottom: 2 * $line-height
+
+blockquote
+  *
+    quotes: ''
+  > *
+    +simulated-quotes("“", "”")
+  q
+    +simulated-quotes("‘", "’")
+  *[lang~='de'] &, &[lang~='de']
+    > *
+      +simulated-quotes("«", "»")
+    q
+      +simulated-quotes("›", "‹")
+
+// figure, figcaption
+
+// ----- //
+// Links //
+// ----- //
+
+a
+  color: $link-color
+  text-decoration: none
+  &:visited, &.visited
+    color: $link-visited-color
+  &:focus, &.focus
+    color: $link-focus-color
+  &:hover, &.hover
+    color: $link-hover-color
+    border-bottom: 1px dotted $link-hover-color
+  &:active, &.active
+    color: $link-active-color
+
+.content
+  +typo-large
+  ul.custom li:before
+    content: "\002F\002F\0020\0020"  
+  a
+    font-family: BellGothic-Black, Verdana, sans-serif
+
+  
+// -------------------- //
+// Text-level semantics //
+// -------------------- //
+
+em
+  font-style: italic
+  color: $font-color-dark
+
+strong
+  font-weight: bold
+  color: $font-color-dark
+
+small
+  +typo-small
+  color: $font-color-light
+
+cite
+  font-style: italic
+
+// This would be the correct CSS solution but thanks to Safari
+// everything gets more complicated
+//
+// #{":lang(de)"}
+//   quotes: "«" "»" "'" "'"
+// q
+//   // Fix to give Opera default quotes
+//   quotes: '“' '”' '‘' '’'
+//   &:before
+//     content: open-quote
+//   &:after
+//     content: close-quote
+
+// Uses the method described in http://monc.se/kitchen/129/rendering-quotes-with-css
+// to automatically create quotes in all modern browsers.
+
+q
+  +simulated-quotes("“", "”")
+  font-style: italic
+  q
+    +simulated-quotes("‘", "’")
+  *[lang~='de'] &, &[lang~='de']
+    +simulated-quotes("«", "»")
+    q
+      +simulated-quotes("›", "‹")
+
+dfn
+  border-bottom: 1px dotted $font-color
+
+abbr
+  border-bottom: 1px dotted $font-color
+  cursor: help
+
+code, var, samp, kbd
+  +font-family-monospace
+  background-color: $lightest-grey
+
+sub, sup
+  +typo-small
+  line-height: 0
+sub
+  vertical-align: sub
+sup
+  vertical-align: super
+
+i
+  font-style: italic
+
+b
+  font-weight: bold
+
+mark
+  background-color: $feedback-neutral
+
+// time, ruby, rt, rp, bdo
+
+// ----- //
+// Edits //
+// ----- //
+
+del
+  text-decoration: line-through
+  color: $font-color-light
+
+ins
+  text-decoration: underline
+  color: $font-color-dark
+
+.bold
+  font-family: BellGothic-Black, Verdana, sans-serif
+  font-size: 90%
+  vertical-align: baseline
+  letter-spacing: 0.2px
+  
+.slashes
+  font-size: 92%
+  vertical-align: top
