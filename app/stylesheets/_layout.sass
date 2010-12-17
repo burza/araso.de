@@ -2,22 +2,27 @@
 
 
 body
-  background-color: $lightest-grey
+  background-color: $dark-grey
 
 $image: "grid.png"
   
 #container
-  +container
+  +column(16, true)
+  margin: 0px auto
+  float: none
+  display: block
+  +clearfix
   +showgrid($image)
   min-height: 150px
   header
     +column(16, true)
+    text-align: center
   #center
     +column(16, true)
     .sidebar
-      +column(5)
+      +column(5, true)
     .content
-      +column(11, true)
+      +column(11)
   footer
     +column(16, true)
 
