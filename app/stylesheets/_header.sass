@@ -1,6 +1,14 @@
+//    color: #A4EE00
+
+
 header
   font-size: 18px
-  padding: $line-height * 2 0px ($line-height * 2) + ($line-height / 2) 0px
+  padding: $line-height * 2 0px $line-height * 2 0px
+  position: relative
+  canvas
+    position: absolute
+    right: 0px
+    top: 36px
   a
     color: $font-color
     &:visited, &.visited
@@ -10,7 +18,10 @@ header
       border-bottom: 0px
     &:active, &.active
       color: $link-active-color
-      
+  h1
+    +font-metrics(60px, 60px)
+    font-family: 'DroidSerifBoldItalic'
+    margin-bottom: 0px
 .logo
   text-transform: uppercase
   color: $font-color
@@ -18,9 +29,7 @@ header
   letter-spacing: -1px
 
 nav
-  text-align: right
   color: $font-color
-  +clearfix
+  line-height: $line-height * 2
   ol
     +horizontal-list
-    +float-right

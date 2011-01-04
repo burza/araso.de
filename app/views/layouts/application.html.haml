@@ -8,13 +8,18 @@
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    = javascript_include_tag :all
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'modernizr-1.6.min', 'application'
     = csrf_meta_tag  
     %title Awesome Rails Solutions - Agiler Web Designer in Hamburg
   %body
     #container
       %header
-        %h1 Awesome Rails Solutions
+        %h1 araso.de
+        .claim Awesome Rails Solutions
+        %canvas{ :id => "skyline", :width => "290px", :height => "120px", :style => "background-color: white"}
+        %nav
+          %ol
+            %li= link_to "Home", root_path
       #center
         %section.content
           = yield

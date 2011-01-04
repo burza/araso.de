@@ -3,20 +3,22 @@
 
 body
   background-color: $dark-grey
+  margin: 0px auto
 
 $image: "grid.png"
   
 #container
   +column(16, true)
+  +clearfix
   margin: 0px auto
   float: none
   display: block
-  +clearfix
-  +showgrid($image)
   min-height: 150px
+  background-color: $dark-grey
   header
     +column(16, true)
-    text-align: center
+  nav
+    +column(16, true)
   #center
     +column(16, true)
     .sidebar
