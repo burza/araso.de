@@ -119,16 +119,16 @@ function drawSkyline(ctx) {
 }
 
 function draw() {
-  var skyline = document.getElementById("skyline");
+  // var skyline = document.getElementById("skyline");
   
-  if (skyline.getContext) {
-    var ctx = skyline.getContext('2d');
-
-    drawSkyline(ctx);
-    //drawCircles(ctx);
-    //drawBubble(ctx);
-    
-  }
+  // if (skyline.getContext) {
+  //   var ctx = skyline.getContext('2d');
+  // 
+  //   drawSkyline(ctx);
+  //   //drawCircles(ctx);
+  //   //drawBubble(ctx);
+  //   
+  // }
 }
 
 $(document).ready(function(){

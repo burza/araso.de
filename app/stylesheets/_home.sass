@@ -14,15 +14,25 @@
     font-size: 17px
 
 figure
+  +float-right
+  margin: 5px
   display: block
-  width: 180px
-  height: 265px
+  width: 370px
+  height: 245px
   &.home
-    background: transparent image_url('home.png') no-repeat
+    +border-radius(10px)
+    +box-shadow(#222, 0px, 0px, 5px)
+    background: transparent image_url('greg.png') 0px -20px no-repeat
   &.person
     background: transparent image_url('person.png') no-repeat
   &.schwerpunkte
     background: transparent image_url('schwerpunkte.png') no-repeat
   &.kosten 
     background: transparent image_url('kosten.png') no-repeat
-  
+
+footer
+  line-height: 3 * $line-height
+  ol
+    +float-left
+    +horizontal-list
+  text-align: right

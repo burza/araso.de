@@ -20,7 +20,7 @@ header
       color: $link-active-color
   h1
     +font-metrics(60px, 60px)
-    font-family: 'DroidSerifBoldItalic'
+    font-style: italic
     margin-bottom: 0px
 .logo
   text-transform: uppercase
@@ -32,4 +32,10 @@ nav
   color: $font-color
   line-height: $line-height * 2
   ol
-    +horizontal-list
+    +float-right
+  li
+    +float-left
+    +border-radius(10px)
+    padding: 0 15px
+    margin-left: 5px
+    background-color: $darkest-grey
