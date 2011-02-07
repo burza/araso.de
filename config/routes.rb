@@ -1,4 +1,10 @@
 ArasoDe::Application.routes.draw do
+
+  match '/projects' => 'projects#index'
+  
+  match '/:page' => 'pages#show'
+  
+  match '/about' => 'pages#show', :as => :about
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

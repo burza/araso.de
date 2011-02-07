@@ -10,6 +10,7 @@ $neon-lila: rgb(248,0,255)
 $neon-green: rgb(76,255,3)
 $neon-blue: rgb(0,190,255)
 $neon-violett: rgb(108,0,255)
+$neon-red: rgb(255,0,102)
 
 $green: #7BA32D
 .-sg-color-green
@@ -27,7 +28,7 @@ $orange: #C48726
 .-sg-color-orange
   background-color: $orange
 
-$red: #A41717
+$red: rgb(242,25,5)
 .-sg-color-red
   background-color: $red
 
@@ -81,7 +82,7 @@ $feedback-negative: $red
 // Action colors //
 // ------------- //
 
-$action-standard: $neon-yellow
+$action-standard: $neon-blue
 .-sg-color-action-standard
   background-color: $action-standard
 
@@ -103,7 +104,7 @@ $font-color-dark: $black
 // ----- //
 
 $link-color: $action-standard
-$link-hover-color: $action-cta
+$link-hover-color: lighten($action-standard, 20%)
 $link-active-color: $action-cta
 $link-visited-color: $action-standard
 $link-focus-color: $link-hover-color

@@ -133,26 +133,23 @@ function draw() {
 
 $(document).ready(function(){
   // draw();
-  var originalBG = $("nav li").css("background-color"),
-    x, y, xy, bgWebKit, bgMoz, 
-    lightColor = "rgba(255,0,0,0.75)",
-    gradientSize = 100;
-  console.log(originalBG);
-  $('nav li').mousemove(function(e) {
-
-      x  = e.pageX - this.offsetLeft;
-      y  = e.pageY - this.offsetTop;
-      xy = x + " " + y;
-      console.log(xy);
-      bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", 100, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.0))), " + originalBG;
-      bgMoz    = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, " + lightColor + " 0%, " + originalBG + " " + gradientSize + "px)";
-
-      $(this)
-        .css({ background: bgWebKit })
-        .css({ background: bgMoz });
-      console.log(bgMoz);
-  }).mouseleave(function() {
-          $(this).css({ background: originalBG });
-  });
+  // var originalBG = $("nav li").css("background-color");
+  // var lightColor = "rgba(63,63,63,0.75)";
+  // var gradientSize = 80;
+  // console.log(originalBG);
+  // $('nav li').mousemove(function(e) {
+  // 
+  //     var x  = e.layerX;
+  //     var y  = e.layerY;
+  //     var xy = x + " " + y;
+  // 
+  //     var bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", 80, from(rgba(63,63,63,0.8)), to(rgba(63,63,63,0.0))), " + originalBG;
+  //     var bgMoz    = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, " + lightColor + " 0%, " + originalBG + " " + gradientSize + "px)";
+  //     console.log(bgWebKit);
+  //     console.log(bgMoz);
+  //     $(this).css({ background: bgWebKit }).css({ background: bgMoz });
+  // }).mouseleave(function() {
+  //         $(this).css({ background: originalBG });
+  // });
 });
 

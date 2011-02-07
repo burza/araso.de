@@ -15,9 +15,7 @@ $image: "grid.png"
   display: block
   min-height: 150px
   background-color: $dark-grey
-header
-  +column(16, true)
-nav
+header, footer, .two-col-content
   +column(16, true)
 #center
   +column(16, true)
@@ -25,13 +23,14 @@ aside
   +column(8, true)
 .content
   +column(8)
-footer
-  +column(16, true)
 .logo
   +column(6)
 nav
   +column(10, true)
-
+.project
+  +column(4)
+  &:nth-child(4n+1)
+    +column(4, true)
 
 
 

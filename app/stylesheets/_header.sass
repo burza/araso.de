@@ -36,9 +36,18 @@ nav
   line-height: $line-height * 2
   ol
     +float-right
+    overflow: hidden
   li
     +float-left
-    +border-radius(10px)
-    padding: 10px 25px
     margin-left: 5px
-    background: $darkest-grey
+    > a
+      +border-radius(10px)
+      padding: 0 15px
+      background-color: $darkest-grey
+      display: block
+      &:hover
+        background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 40, from(rgba(63,63,63,0.8)), to(rgba(63,63,63,0.0))), rgb(34, 34, 34)
+        background: -moz-radial-gradient(50% 100% 45deg, circle, rgba(63,63,63,0.75) 0%, rgb(34, 34, 34) 40px)      
+        color: $neon-yellow
+      &:active
+        margin-top: 1px

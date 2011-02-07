@@ -17,7 +17,7 @@ h1
   +h1
 
 h2
-  +h2
+  +h1
 
 h3
   +h3
@@ -99,10 +99,10 @@ a
     border-bottom: 1px dotted $link-hover-color
   &:active, &.active
     color: $link-active-color
+    border-bottom: 1px dotted $link-active-color
 
 .content
   +typo-large
-  padding-top: $line-height / 2
   ul.custom li:before
     content: "\002F\002F\0020\0020"
   
@@ -116,7 +116,7 @@ em
 
 strong
   font-style: italic
-  color: $neon-blue
+  font-weight: bold
 small
   +typo-small
   color: $font-color-light

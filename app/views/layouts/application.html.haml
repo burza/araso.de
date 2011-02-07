@@ -22,16 +22,14 @@
         %nav
           %ol
             %li= link_to "Gregor...", root_path
-            %li= link_to "der Designer", root_path
-            %li= link_to "und Sportler", root_path
+            %li= link_to "Web-Ninja", projects_path
+            %li= link_to "und Sportler", about_path
       #center
-        %section.content
-          = yield
-        %aside
-          = yield :sidebar
+        = yield
         
       %footer
         %ol
-          %li= link_to "Impressum", ""
-          %li= link_to "Kontakt", ""
+          %li= link_to "Impressum", "/impressum"
+          %li= "-"
+          %li= link_to "Kontakt", "/contact"
         &copy; 2011 - araso.de
