@@ -43,8 +43,17 @@ nav
     > a
       +border-radius(10px)
       padding: 0 15px
-      background-color: $darkest-grey
+      background: $darkest-grey
       display: block
+      -webkit-transition-property: color, background
+      -webkit-transition-duration: 0.5s, 0.5s
+      -webkit-transition-timing-function: linear, ease-in
+      -moz-transition-property: color, background
+      -moz-transition-duration: 0.5s
+      -moz-transition-timing-function: linear, ease-in
+      -o-transition-property: color, background 
+      -o-transition-duration: 0.5s
+      -o-transition-timing-function: linear, ease-in
       &:hover
         background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 40, from(rgba(63,63,63,0.8)), to(rgba(63,63,63,0.0))), rgb(34, 34, 34)
         background: -moz-radial-gradient(50% 100% 45deg, circle, rgba(63,63,63,0.75) 0%, rgb(34, 34, 34) 40px)      
