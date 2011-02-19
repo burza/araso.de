@@ -3,8 +3,11 @@
 
 header
   font-size: 18px
-  padding: $line-height 0px $line-height 0px
+  margin:
+    top: $line-height
+    bottom: $line-height * 2
   position: relative
+  z-index: 100
   canvas
     position: absolute
     right: 0px
@@ -23,11 +26,26 @@ header
     font-style: italic
     margin-bottom: 0px
     text-transform: uppercase
-
+    color: $neon-green
+    -webkit-transition-property: text-shadow
+    -webkit-transition-duration: 1s, 1s
+    -webkit-transition-timing-function: linear, ease-in
+    -moz-transition-property: text-shadow
+    -moz-transition-duration: 1s
+    -moz-transition-timing-function: linear, ease-in
+    -o-transition-property: text-shadow 
+    -o-transition-duration: 1s
+    -o-transition-timing-function: linear, ease-in
+    cursor: pointer
+    &:hover
+      text-shadow: 0 0 10px darken($neon-green, 30%), 0 0 20px darken($neon-green, 30%), 0 0 30px darken($neon-green, 20%), 0 0 40px $neon-green, 0 0 70px $neon-green, 0 0 80px $neon-green, 0 0 100px $neon-green, 0 0 150px $neon-green
 .claim
   font-size: 18px
-  line-height: 2em
+  line-height: 1.5em
   font-style: italic
+  border-top: 1px solid rgba(255,255,255,0.1)
+  +float-left
+  cursor: pointer
 .additional
   letter-spacing: -1px
 
