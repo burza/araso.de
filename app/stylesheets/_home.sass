@@ -14,11 +14,32 @@
     font-size: 17px
 p
   overflow: hidden
+  h1, h2, h3
+    display: inline
+    +typo-large
 figure
   margin: 5px
   display: block
   +border-radius(10px)
   +box-shadow(#222, 0px, 0px, 5px)
+  position: relative
+  figcaption
+    background: rgb(0,0,0)
+    background: rgba(0,0,0,.5)
+    display: block
+    padding: $line-height / 2 $line-height
+    +border-bottom-radius(10px)
+    position: absolute
+    bottom: 0px
+    width: 334px
+    opacity: 0
+    -webkit-transition: opacity .5s ease-in-out
+    -moz-transition: opacity .5s ease-in-out
+    -o-transition: opacity .5s ease-in-out
+    transition: opacity .5s ease-in-out
+  &:hover figcaption
+    opacity: 1
+    
   &.home
     width: 370px
     height: 245px

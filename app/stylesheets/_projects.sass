@@ -1,6 +1,19 @@
 .project
   +linear-gradient(color-stops($darkest-grey, $darkest-grey 60%, $dark-grey))
   margin-bottom: $line-height
+  -webkit-transition-property: background
+  -webkit-transition-duration: 1s, 1s
+  -webkit-transition-timing-function: linear, ease-in
+  -moz-transition-property: background
+  -moz-transition-duration: 1s
+  -moz-transition-timing-function: linear, ease-in
+  -o-transition-property: background
+  -o-transition-duration: 1s
+  -o-transition-timing-function: linear, ease-in
+  &:hover
+    background: radial-gradient(center 45deg, circle closest-corner, rgba(255,0,255,0.8) 30%, rgba(108,0,255,0.8) 40%)
+    background: -webkit-gradient(radial, 50% 35%, 50, 50% 35%, 90, from(rgba(255,0,255,0.8)), color-stop(0.4,rgba(108,0,255,0.8)), to(rgb(46, 46, 46)))
+    background: -moz-radial-gradient(50% 35% 45deg, circle, rgba(255,0,255,0.8) 30%, rgba(108,0,255,0.8) 40%, rgb(46, 46, 46) 90px)
   > figure
     margin: 0 0 $line-height / 2 0
     padding: 0
@@ -15,6 +28,7 @@
     padding: $line-height / 2
     margin-bottom: 0px
     line-height: 1em
+    
   .info
     +typo-small
     height: $line-height * 2

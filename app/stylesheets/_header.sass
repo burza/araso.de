@@ -12,18 +12,11 @@ header
     position: absolute
     right: 0px
     top: 36px
+.logo
   a
-    color: $font-color
-    &:visited, &.visited
-      color: $font-color
-    &:hover, &.hover
-      color: $link-hover-color
-      border-bottom: 0px
-    &:active, &.active
-      color: $link-active-color
-  h1
     +font-metrics(60px, 60px)
     font-style: italic
+    font-weight: bold
     margin-bottom: 0px
     text-transform: uppercase
     color: $neon-green
@@ -38,6 +31,7 @@ header
     -o-transition-timing-function: linear, ease-in
     cursor: pointer
     &:hover
+      border-bottom: none
       text-shadow: 0 0 10px darken($neon-green, 30%), 0 0 20px darken($neon-green, 30%), 0 0 30px darken($neon-green, 20%), 0 0 40px $neon-green, 0 0 70px $neon-green, 0 0 80px $neon-green, 0 0 100px $neon-green, 0 0 150px $neon-green
 .claim
   font-size: 18px
@@ -52,6 +46,16 @@ header
 nav
   color: $font-color
   line-height: $line-height * 2
+  a
+    color: $font-color
+    &:visited, &.visited
+      color: $font-color
+    &:hover, &.hover
+      color: $link-hover-color
+      border-bottom: 0px
+    &:active, &.active
+      color: $link-active-color
+  
   ol
     +float-right
     overflow: hidden
