@@ -2410,12 +2410,12 @@ figure.home {
 figure.football {
   width: 370px;
   height: 245px;
-  background: transparent url('/images/football.png?1297704344') 0px 0px no-repeat;
+  background: transparent url('/images/football.png?1297704344') -170px -5px no-repeat;
   display: inline;
-  float: right;
-  margin-left: 30px;
-  width: 370px;
-  height: 245px;
+  float: left;
+  margin-right: 30px;
+  width: 190px;
+  height: 145px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000356}}
 figure.bike {
@@ -2423,17 +2423,17 @@ figure.bike {
   display: inline;
   float: left;
   margin-right: 30px;
-  width: 370px;
-  height: 245px;
+  width: 190px;
+  height: 145px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000362}}
 figure.triathlon {
-  background: transparent url('/images/triathlon.png?1297704305') 0px -10px no-repeat;
+  background: transparent url('/images/triathlon.png?1297704305') -70px -115px no-repeat;
   display: inline;
   float: left;
   margin-right: 30px;
-  width: 370px;
-  height: 245px;
+  width: 190px;
+  height: 145px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000368}}

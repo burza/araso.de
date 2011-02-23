@@ -1,0 +1,15 @@
+= form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f|
+  %p
+    = f.label "Name"
+    = f.text_field :sender_name
+  %p
+    = f.label "Email"
+    = f.text_field :email
+  %p
+    = f.label "Betreff"
+    = f.text_field :subject
+  %p
+    = f.label "Nachricht"
+    = f.text_area :content
+  %p
+    = f.submit "Nachricht senden"
