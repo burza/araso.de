@@ -5,7 +5,6 @@ class Notifier < ActionMailer::Base
     @sender = sender
     mail(:to => "gregor.swatek@gmail.com",
          :from => sender.email,
-         :subject => sender.subject,
-         :body => sender.content)
+         :subject => sender.subject)
   end
 end
