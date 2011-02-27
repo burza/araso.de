@@ -1,4 +1,4 @@
-- @user = User.new
+- @user = Contact.new(:id => 1)
 - @user.valid?
 
 #container.-grid-debug
@@ -15,16 +15,16 @@
         .step-content
           = f.text_field :email
           = f.error_label_if :email
-      = f.step([:firstname, :lastname]) do
+      = f.step([:sender_name, :sender_name]) do
         .step-title Wie heißen Sie?
         .step-content
-          = f.subglobal_errors([:firstname, :lastname])
+          = f.subglobal_errors([:sender_name, :sender_name])
           .substep
-            = f.text_field :firstname, :size => 10
-            = f.error_label :firstname, "Vorname"
+            = f.text_field :sender_name, :size => 10
+            = f.error_label :sender_name, "Vorname"
           .substep
-            = f.text_field :lastname
-            = f.error_label :lastname, "Nachname"
+            = f.text_field :sender_name
+            = f.error_label :sender_name, "Nachname"
         .step-hint
           %p Diese Angabe wird benötigt, um Sie zu identifizieren.
 

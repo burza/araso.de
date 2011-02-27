@@ -1,15 +1,27 @@
-= form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f|
-  %p
-    = f.label "Name"
-    = f.text_field :sender_name
-  %p
-    = f.label "Email"
-    = f.text_field :email
-  %p
-    = f.label "Betreff"
-    = f.text_field :subject
-  %p
-    = f.label "Nachricht"
-    = f.text_area :content
-  %p
-    = f.submit "Nachricht senden"
+= form_for @contact, :html => { :method => :post, :class => "standard-columns-right" }, :builder => CatwalkFormBuilder do |f|
+  %ol
+    = f.step([:sender_name]) do
+      = f.label :sender_name, t('.sender_name'), :class => "step-title"
+      .step-content
+        = f.text_field :sender_name
+        = f.error_label_if :sender_name
+    = f.step([:email]) do
+      = f.label :email, t('.email'), :class => "step-title"
+      .step-content
+        = f.text_field :email
+        = f.error_label_if :email
+    = f.step([:subject]) do
+      = f.label :subject, t('.subject'), :class => "step-title"
+      .step-content
+        = f.text_field :subject, :size => 40
+        = f.error_label_if :subject
+    = f.step([:content]) do
+      = f.label :content, t('.content'), :class => "step-title"
+      .step-content
+        = f.text_area :content, :cols => 39, :rows => 14
+        = f.error_label_if :content
+    %li.no-title
+      .step-content
+        %button.btn-cta{:type => "submit"}= t('.submit')
+        oder
+        %a{:href => '#'} abbrechen

@@ -3,8 +3,10 @@
 // ----------------- //
 
 .btn-standard
-  +fancy-button($light-grey, $font-size, $font-size)
+  +fancy-button($light-grey, $font-size-large, $font-size-large)
   +font-family
+  +border-radius(10px)
+  +box-shadow(none)
 
 button.btn-standard, input.btn-standard
   #padding-top: 0
@@ -17,8 +19,10 @@ button.btn-standard, input.btn-standard
 // ------------------- //
 
 .btn-recommended
-  +fancy-button(lighten($action-standard, 20%), $font-size, $font-size)
+  +fancy-button(lighten($action-standard, 20%), $font-size-large, $font-size-large)
   +font-family
+  +border-radius(10px)
+  +box-shadow(none)
 
 button.btn-recommended, input.btn-recommended
   #padding-top: 0
@@ -31,8 +35,10 @@ button.btn-recommended, input.btn-recommended
 // ---------------------- //
 
 .btn-cta
-  +fancy-button($action-cta, $font-size, $font-size)
+  +fancy-button(darken($action-cta, 10%), $font-size-large, $font-size-large)
   +font-family
+  +border-radius(10px)
+  +box-shadow(none)
 
 button.btn-cta, input.btn-cta
   #padding-top: 0

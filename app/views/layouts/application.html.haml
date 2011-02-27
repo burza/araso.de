@@ -1,6 +1,13 @@
 !!!
 %html
   %head
+    - title = yield(:title)
+    %title=  title.blank? ? "Awesome Rails Solutions - Agiler Web Designer in Hamburg" : title
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
+    %meta{:name => "keywords", :content => yield(:meta_keywords)}
+    %meta{:name => "description", :content => yield(:meta_description)}
+    = csrf_meta_tag
+    %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     /[if lt IE 7]
@@ -9,8 +16,6 @@
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'modernizr-1.6.min', 'application'
-    = csrf_meta_tag  
-    %title Awesome Rails Solutions - Agiler Web Designer in Hamburg
     %meta{ :name => "viewport", :content => "width=device-width, user-scale=no"}
   %body
     #container
@@ -25,11 +30,19 @@
             %li= link_to "Web-Ninja", projects_path
             %li= link_to "und Sportler", about_path
       #center
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}", :class => "feedback #{name}"
         = yield
         
       %footer
         %ol
-          %li= link_to "Impressum", "/impressum"
+          %li= link_to "Impressum", impressum_path
           %li= "-"
           %li= link_to "Kontakt", new_contact_path
+          %li= "-"
+          %li= link_to "Blog", "http://blog.araso.de"
+          
         &copy; 2011 - araso.de
+        
+    %script{:type => "text/javascript"}
+      var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-21690115-1']);_gaq.push(['_setDomainName', '.araso.de']);_gaq.push(['_trackPageview']);(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();

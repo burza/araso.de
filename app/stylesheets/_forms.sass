@@ -16,10 +16,12 @@ form.standard-rows
   .step-hint
     // +padded-column(6, $error-message-padding)
     width: 143px
-
+  input[type=text], input[type=password], textarea
+    font-size: $font-size-large
+    +font-family
 form.standard-columns-left
   @extend form.standard-rows
-  +padded-column(19, 20px)
+  +padded-column(16, 20px)
   .step-title
     +padded-column(5, 10px)
   .step-content

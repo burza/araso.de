@@ -7,9 +7,9 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     if @contact.save
-      redirect_to('/', :notice => "Nachricht wurde erfolgreich verschickt! Ich werde so schnell es geht antworten.")
+      redirect_to('/', :notice => I18n.t('contacts.messages.success'))
     else
-      flash[:alert] = "Fuellen Sie bitte alle Felder aus, vielen Dank!"
+      flash[:error] = I18n.t('errors.contact.submit')
       render 'new'
     end
   end
