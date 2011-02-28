@@ -6,6 +6,7 @@ ArasoDe::Application.routes.draw do
   #match '/:page' => 'pages#show'
   match '/about' => 'pages#about', :as => :about
   match '/impressum' => 'pages#impressum', :as => :impressum
+  match '/datenschutz' => 'pages#datenschutz', :as => :datenschutz
   match '/styleguide' => 'styleguide#index'
   root :to => "home#index"
 
