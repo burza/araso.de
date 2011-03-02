@@ -4,12 +4,8 @@
   $blueprint_grid_width: 20px
   $blueprint_grid_margin: 10px
 
-  body
-    background-color: red
-  
   #container
     +column(16, true)
-    +showgrid($image)
     min-height: 150px
     margin: 0px auto
     float: none
@@ -17,13 +13,50 @@
     +clearfix
     header
       +column(16, true)
+      .logo
+        float: none
+        display: block
+        margin: 0px auto
+        width: 210px
+        overflow: visible
+        margin-bottom: $line-height * 2
+      .claim
+        display: block
+        float: none
+      nav
+        ol
+          float: none
+          display: block
+          text-align: center
+          li
+            float: none
+            margin-left: 0px
+            display: inline-block
     #center
       +column(16, true)
+      margin-bottom: $line-height
       aside
-        width: 100%
-        border: 1px solid red
+        +column(16, true)
+        figure.home
+          float: none
+          display: block
+          margin: 0px auto
       .content
-        +column(8)
+        +column(13, true)
+        text-align: center
+        margin: 0 auto
+        margin-bottom: $line-height * 2
+        display: block
+        float: none
+        
     footer
       +column(16, true)
-  
+      text-align: center
+      ol
+        display: block
+        float: none
+        text-align: center
+        li
+          float: none
+          display: inline-block
+        

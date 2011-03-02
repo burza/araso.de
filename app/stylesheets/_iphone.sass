@@ -4,27 +4,36 @@
   $blueprint_grid_width: 20px
   $blueprint_grid_margin: 10px
 
-  body
-    background-color: green
-    
-    #container
+  #container
+    +column(10, true)
+    min-height: 150px
+    margin: 0px auto
+    float: none
+    display: block
+    +clearfix
+    header
       +column(10, true)
-      +showgrid($image)
-      min-height: 150px
-      margin: 0px auto
-      float: none
-      display: block
-      +clearfix
-      header
+      margin-bottom: 0px
+      nav
+        +column(6, true)
+        display: block
+        margin: 0 auto
+        float: none
+        li
+          margin-bottom: $line-height
+        
+    #center
+      +column(10, true)
+      aside
+        width: 100%
+        figure.home
+          background-position: -60px -25px
+          width: 290px
+          height: 245px
+      .content
         +column(10, true)
-      #center
-        +column(10, true)
-        aside
-          border: 1px solid red
-          width: 100%
-        .content
-          +column(10, true)
-          border: 1px solid green
-      footer
-        +column(10, true)
-
+    footer
+      +column(10, true)
+      ol
+        margin: 0 auto
+        line-height: 27px
