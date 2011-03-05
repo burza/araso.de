@@ -1865,7 +1865,7 @@ form.standard-rows .step-hint, form.standard-columns-left .step-hint, form.stand
   width: 143px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_forms\.sass}line{font-family:\0000319}}
-form.standard-rows input[type=text], form.standard-columns-left input[type=text], form.standard-columns-right input[type=text], form.two-column-test input[type=text], form.two-column-ol-test input[type=text], form.standard-rows input[type=password], form.standard-columns-left input[type=password], form.standard-columns-right input[type=password], form.two-column-test input[type=password], form.two-column-ol-test input[type=password], form.standard-rows textarea, form.standard-columns-left textarea, form.standard-columns-right textarea, form.two-column-test textarea, form.two-column-ol-test textarea {
+form.standard-rows input[type=text], form.standard-columns-left input[type=text], form.standard-columns-right input[type=text], form.two-column-test input[type=text], form.two-column-ol-test input[type=text], form.standard-rows input[type=password], form.standard-columns-left input[type=password], form.standard-columns-right input[type=password], form.two-column-test input[type=password], form.two-column-ol-test input[type=password], form.standard-rows input[type=email], form.standard-columns-left input[type=email], form.standard-columns-right input[type=email], form.two-column-test input[type=email], form.two-column-ol-test input[type=email], form.standard-rows textarea, form.standard-columns-left textarea, form.standard-columns-right textarea, form.two-column-test textarea, form.two-column-ol-test textarea {
   font-size: 16px;
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
 }
@@ -2674,6 +2674,79 @@ footer ol li:last-child, footer ol li.last {
     overflow-x: hidden;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000338}}
+  #container #center form.standard-ipad {
+    padding: 0;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000342}}
+  #container #center form.standard-ipad ol, #container #center form.standard-ipad ul {
+    list-style: none;
+    list-style-position: outside;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000344}}
+  #container #center form.standard-ipad li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    *zoom: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
+  #container #center form.standard-ipad li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000351}}
+  #container #center form.standard-ipad .step-title {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000355}}
+  #container #center form.standard-ipad .step-content {
+    *zoom: 1;
+    padding-left: 0px;
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
+  #container #center form.standard-ipad .step-content:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000359}}
+  #container #center form.standard-ipad .step-hint {
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000361}}
+  #container #center form.standard-ipad li .substep {
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000363}}
+  #container #center form.standard-ipad .subglobal-errors {
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000365}}
+  #container #center form.standard-ipad .error {
+    padding: 0px;
+    margin: 0px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000368}}
+  #container #center form.standard-ipad input[type=text], #container #center form.standard-ipad input[type=password], #container #center form.standard-ipad textarea {
+    font-size: 16px;
+    font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000371}}
   #container #center aside {
     display: inline;
     float: left;
@@ -2684,29 +2757,50 @@ footer ol li:last-child, footer ol li.last {
   * html #container #center aside {
     overflow-x: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000373}}
   #container #center aside figure.home {
     float: none;
     display: block;
     margin: 0px auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000344}}
-  #container #center .content {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000377}}
+  #container #center .content, #container #center .two-col-content {
     display: inline;
     float: left;
     margin-right: 0;
-    width: 380px;
-    text-align: center;
+    width: 470px;
     margin: 0 auto;
     margin-bottom: 36px;
     display: block;
     float: none;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_grid\.scss}line{font-family:\00003138}}
-  * html #container #center .content {
+  * html #container #center .content, * html #container #center .two-col-content {
     overflow-x: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000383}}
+  #container #center .content .project, #container #center .two-col-content .project {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 170px;
+    margin-left: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_grid\.scss}line{font-family:\00003138}}
+  * html #container #center .content .project, * html #container #center .two-col-content .project {
+    overflow-x: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000386}}
+  #container #center .content .project > figure a, #container #center .two-col-content .project > figure a {
+    width: 170px;
+    height: 118px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000390}}
+  #container #center .content .project > figure a img, #container #center .two-col-content .project > figure a img {
+    width: 170px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000393}}
   #container footer {
     display: inline;
     float: left;
@@ -2718,16 +2812,38 @@ footer ol li:last-child, footer ol li.last {
   * html #container footer {
     overflow-x: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000396}}
   #container footer ol {
     display: block;
     float: none;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\00003100}}
   #container footer ol li {
     float: none;
     display: inline-block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\00003103}}
+  h1 {
+    padding-left: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\00003107}}
+  .about > article {
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 470px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_grid\.scss}line{font-family:\00003138}}
+  * html .about > article {
+    overflow-x: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_ipad\.sass}line{font-family:\00003109}}
+  .about figure {
+    margin-right: 20px;
+    margin-left: 10px;
   }
 }
 
@@ -2801,17 +2917,32 @@ footer ol li:last-child, footer ol li.last {
     height: 245px;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000333}}
-  #container #center .content {
+  #container #center .content, #container #center .two-col-content {
     display: inline;
     float: left;
     margin-right: 0;
     width: 290px;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_grid\.scss}line{font-family:\00003138}}
-  * html #container #center .content {
+  * html #container #center .content, * html #container #center .two-col-content {
     overflow-x: hidden;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000335}}
+  #container #center .content .project, #container #center .two-col-content .project {
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000339}}
+  #container #center .content .project > figure a, #container #center .two-col-content .project > figure a {
+    overflow: hidden;
+    width: 270px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000342}}
+  #container #center .content .project > figure a img, #container #center .two-col-content .project > figure a img {
+    width: 270px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000345}}
   #container footer {
     display: inline;
     float: left;
@@ -2822,9 +2953,37 @@ footer ol li:last-child, footer ol li.last {
   * html #container footer {
     overflow-x: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000347}}
   #container footer ol {
     margin: 0 auto;
     line-height: 27px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000351}}
+  h1 {
+    padding-left: 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000355}}
+  .about > article {
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 290px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_grid\.scss}line{font-family:\00003138}}
+  * html .about > article {
+    overflow-x: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000357}}
+  .about p {
+    display: inline;
+    float: left;
+    padding-left: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_iphone\.sass}line{font-family:\0000360}}
+  .about figure {
+    margin-right: 20px;
+    margin-left: 10px;
   }
 }

@@ -1,4 +1,4 @@
-= form_for @contact, :html => { :method => :post, :class => "standard-columns-right" }, :builder => CatwalkFormBuilder do |f|
+= form_for @contact, :html => { :method => :post, :class => "standard-columns-right standard-ipad" }, :builder => CatwalkFormBuilder do |f|
   %ol
     = f.step([:sender_name]) do
       = f.label :sender_name, t('.sender_name'), :class => "step-title"
@@ -8,20 +8,18 @@
     = f.step([:email]) do
       = f.label :email, t('.email'), :class => "step-title"
       .step-content
-        = f.text_field :email
+        = f.text_field :email, :type => "email"
         = f.error_label_if :email
     = f.step([:subject]) do
       = f.label :subject, t('.subject'), :class => "step-title"
       .step-content
-        = f.text_field :subject, :size => 40
+        = f.text_field :subject, :size => 30
         = f.error_label_if :subject
     = f.step([:content]) do
       = f.label :content, t('.content'), :class => "step-title"
       .step-content
-        = f.text_area :content, :cols => 39, :rows => 14
+        = f.text_area :content, :cols => 29, :rows => 7
         = f.error_label_if :content
     %li.no-title
       .step-content
         %button.btn-cta{:type => "submit"}= t('.submit')
-        oder
-        %a{:href => '#'} abbrechen

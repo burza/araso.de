@@ -35,21 +35,62 @@
     #center
       +column(16, true)
       margin-bottom: $line-height
+      form.standard-ipad
+        $error-message-padding: 10px
+        padding: 0
+        width: 100%
+        ol, ul
+          +reset-list
+        li
+          +reset-box-model
+          +pie-clearfix
+          padding:
+            top: 5px
+            bottom: 5px
+          margin-bottom: 2px
+        .step-title
+          display: block
+          float: none
+          text-align: left
+        .step-content
+          +pie-clearfix
+          padding-left: 0px
+          float: none
+        .step-hint
+          float: none
+        li .substep
+          float: none
+        .subglobal-errors
+          float: none
+        .error
+          padding: 0px
+          margin: 0px
+        input[type=text], input[type=password], textarea
+          font-size: $font-size-large
+          +font-family
       aside
         +column(16, true)
         figure.home
           float: none
           display: block
           margin: 0px auto
-      .content
-        +column(13, true)
-        text-align: center
+      .content, .two-col-content
+        +column(16, true)
         margin: 0 auto
         margin-bottom: $line-height * 2
         display: block
         float: none
-        
-    footer
+        .project
+          +column(6)
+          margin-left: 20px
+          > figure a
+            width: 170px
+            height: 118px
+            overflow: hidden
+            img
+              width: 170px
+  
+    footer  
       +column(16, true)
       text-align: center
       ol
@@ -59,4 +100,12 @@
         li
           float: none
           display: inline-block
-        
+  h1
+    padding-left: 20px
+
+  .about
+    > article
+      +column(16, true)
+    figure
+      margin-right: 20px
+      margin-left: 10px
