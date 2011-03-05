@@ -2419,7 +2419,6 @@ figure figcaption {
   background: black;
   background: rgba(0, 0, 0, 0.5);
   display: block;
-  padding: 9px 18px;
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -o-border-bottom-left-radius: 10px;
@@ -2434,18 +2433,20 @@ figure figcaption {
   border-bottom-right-radius: 10px;
   position: absolute;
   bottom: 0px;
-  width: 334px;
+  width: 100%;
+  line-height: 36px;
+  text-align: center;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000341}}
 figure:hover figcaption {
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000344}}
 figure.home {
   width: 370px;
   height: 245px;
@@ -2453,7 +2454,7 @@ figure.home {
   display: inline;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000349}}
 figure.football {
   width: 370px;
   height: 245px;
@@ -2464,7 +2465,7 @@ figure.football {
   width: 190px;
   height: 148px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000357}}
 figure.bike {
   background: transparent url('/images/bike.png?1297704322') 0px -10px no-repeat;
   display: inline;
@@ -2473,7 +2474,7 @@ figure.bike {
   width: 190px;
   height: 148px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000363}}
 figure.triathlon {
   background: transparent url('/images/triathlon.png?1297704305') -70px -115px no-repeat;
   display: inline;
@@ -2483,14 +2484,14 @@ figure.triathlon {
   height: 148px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000370}}
 .about article {
   -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000375}}
 .about article:hover {
   background: #222222;
   -moz-border-radius: 10px;
@@ -2500,18 +2501,18 @@ figure.triathlon {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000378}}
 .about p {
   padding-top: 9px;
   padding-right: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000382}}
 footer {
-  line-height: 54px;
+  line-height: 36px;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000385}}
 footer ol {
   display: inline;
   float: left;
@@ -2540,6 +2541,15 @@ footer ol li:first-child, footer ol li.first {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-rc2\@araso\.de\/gems\/compass-0\.10\.6\/frameworks\/compass\/stylesheets\/compass\/utilities\/lists\/_horizontal-list\.scss}line{font-family:\0000346}}
 footer ol li:last-child, footer ol li.last {
   padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000389}}
+footer .twitter a {
+  display: block;
+  padding-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000392}}
+footer .twitter a:hover {
+  border-bottom: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_projects\.sass}line{font-family:\000031}}

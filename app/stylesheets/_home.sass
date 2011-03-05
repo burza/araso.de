@@ -27,11 +27,12 @@ figure
     background: rgb(0,0,0)
     background: rgba(0,0,0,.5)
     display: block
-    padding: $line-height / 2 $line-height
     +border-bottom-radius(10px)
     position: absolute
     bottom: 0px
-    width: 334px
+    width: 100%
+    line-height: 2 * $line-height
+    text-align: center
     opacity: 0
     -webkit-transition: opacity .5s ease-in-out
     -moz-transition: opacity .5s ease-in-out
@@ -79,8 +80,15 @@ figure
       top: $line-height / 2
       right: 20px
 footer
-  line-height: 3 * $line-height
+  line-height: 2 * $line-height
+  text-align: right
   ol
     +float-left
     +horizontal-list
-  text-align: right
+  .twitter
+    a
+      display: block
+      padding-top: 5px
+      &:hover
+        border-bottom: none
+  .facebook
