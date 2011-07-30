@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   def new
     # id is required to deal with form
-    @contact = Contact.new(:id => 1)
+    @contact = Contact.new
   end
 
   def create
