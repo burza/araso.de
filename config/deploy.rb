@@ -15,6 +15,8 @@ set :rails_env, :production
 
 set :deploy_to, "/var/www/virtual/araso.de/htdocs"
 set :keep_releases, 5
+set :no_release, false
+set :use_sudo, false
 
 role :app, "#{application}"
 role :web, "#{application}"
