@@ -6,7 +6,7 @@ set :user, 'root'
 set :group, 'www-data'
 
 #set :repository, "git@github.com:burza/#{application}.git"
-set :repository, "/Users/pbartels/Sites/araso.de/.git"
+set :repository, "git@git.assembla.com:araso.git"
 
 set :rails_root, "#{File.expand_path(File.dirname(__FILE__)+ '/..')}"
 
