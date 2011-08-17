@@ -1,0 +1,9 @@
+user: vu2028
+group: www-data
+chdir: /var/www/virtual/araso.de/htdocs/current
+log: log/thin.log
+pid: tmp/pids/thin.pid
+environment: production
+address: 127.0.0.1
+port: 8350
+servers: 1
