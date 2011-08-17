@@ -30,6 +30,7 @@ desc "Link shared files"
 task :link_shared_files do
   run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   run "ln -nfs #{shared_path}/config/thin.yml #{release_path}/config/thin.yml"
+  run "ln -nfs #{shared_path}/db/production.sqlite3 #{release_path}/db/production.sqlite3"
 end
 
 namespace :deploy do

@@ -1,4 +1,4 @@
-user: vu2028
+user: vu2030
 group: www-data
 chdir: /var/www/virtual/araso.de/htdocs/current
 log: log/thin.log
