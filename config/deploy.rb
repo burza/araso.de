@@ -1,8 +1,7 @@
 set :application, "araso.de"
 
 set :scm, :git
-#set :user, 'vu2030'
-set :user, 'root'
+set :user, 'vu2030'
 set :group, 'www-data'
 
 #set :repository, "git@github.com:burza/#{application}.git"
