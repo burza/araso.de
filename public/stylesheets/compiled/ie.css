@@ -1,99 +1,54 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\000039}}
-body {
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000348}}
-* html body legend {
-  margin: 0px -8px 16px 0;
-  padding: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000352}}
-html > body p code {
-  *white-space: normal;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000367}}
-body .container {
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000369}}
-body sup {
-  vertical-align: text-top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000371}}
-body sub {
-  vertical-align: text-bottom;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000373}}
-body hr {
-  margin: -8px auto 11px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000375}}
-body img {
-  -ms-interpolation-mode: bicubic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000377}}
-body fieldset {
-  padding-top: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000379}}
-body textarea {
-  overflow: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000382}}
-body input.text {
-  margin: 0.5em 0;
-  background-color: white;
-  border: 1px solid #bbbbbb;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000386}}
-body input.text:focus {
-  border: 1px solid #666666;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000388}}
-body input.title {
-  margin: 0.5em 0;
-  background-color: white;
-  border: 1px solid #bbbbbb;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000392}}
-body input.title:focus {
-  border: 1px solid #666666;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000394}}
-body input.checkbox {
-  position: relative;
-  top: 0.25em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\0000397}}
-body input.radio {
-  position: relative;
-  top: 0.25em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\00003100}}
-body input.button {
-  position: relative;
-  top: 0.25em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\00003103}}
-body textarea {
-  margin: 0.5em 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\00003105}}
-body select {
-  margin: 0.5em 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@arasode\/gems\/compass-0\.10\.6\/frameworks\/blueprint\/stylesheets\/blueprint\/_ie\.scss}line{font-family:\00003107}}
-body button {
-  position: relative;
-  top: 0.25em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\000031}}
+.onecol {
+  width: 4.7%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000312}}
-#container {
-  text-align: left;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\000034}}
+.twocol {
+  width: 13.2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\000037}}
+.threecol {
+  width: 22.05%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000310}}
+.fourcol {
+  width: 30.6%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000313}}
+.fivecol {
+  width: 39%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000316}}
+.sixcol {
+  width: 48%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000319}}
+.sevencol {
+  width: 56.75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000322}}
+.eightcol {
+  width: 61.6%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000325}}
+.ninecol {
+  width: 74.05%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000328}}
+.tencol {
+  width: 82%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie\.sass}line{font-family:\0000331}}
+.elevencol {
+  width: 91.35%;
 }
