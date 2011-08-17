@@ -33,9 +33,9 @@
           // %canvas{ :id => "skyline", :width => "290px", :height => "120px", :style => ""}
         %nav
           %ol
-            %li= link_to "Gregor...", root_path
-            %li= link_to "Web-Ninja", projects_path
-            %li= link_to "und Sportler", about_path
+            %li= link_to "Über mich", root_path
+            %li= link_to "Meine Projekte", projects_path
+            %li= link_to "Hobbys", about_path
       #center
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}", :class => "feedback #{name}"

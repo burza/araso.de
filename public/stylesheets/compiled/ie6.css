@@ -1,8 +1,8 @@
-/* line 1, ../../../app/stylesheets/ie6.sass */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie6\.scss}line{font-family:\000031}}
 a.button, form button {
   background-image: none !important;
 }
-/* line 3, ../../../app/stylesheets/ie6.sass */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/ie6\.scss}line{font-family:\000033}}
 a.button:hover, a.button:active, a.button:focus, form button:hover, form button:active, form button:focus {
   background-image: none !important;
 }
