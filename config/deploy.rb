@@ -58,4 +58,4 @@ namespace :thin do
 end
 
 after "deploy:update_code", :link_shared_files
-after "deploy:update_code", "deploy:bundle_install"
+#after "deploy:update_code", "deploy:bundle_install"
