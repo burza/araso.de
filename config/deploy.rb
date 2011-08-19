@@ -5,7 +5,6 @@ set :user, 'vu2030'
 set :group, 'www-data'
 
 set :repository, "git@github.com:burza/#{application}.git"
-#set :repository, "git@git.assembla.com:araso.git"
 
 set :rails_root, "#{File.expand_path(File.dirname(__FILE__)+ '/..')}"
 
@@ -25,7 +24,6 @@ role :db, "#{application}", :primary => true
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.2-p290@araso.de'
-set :rvm_type, :system
 
 desc "Link shared files"
 task :link_shared_files do
@@ -44,7 +42,13 @@ namespace :deploy do
   
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "cd #{release_path} && bundle install"
+    #run "cd #{release_path} && bundle install"
+    run "cd #{deploy_to}/current && bundle install"
+  end
+  
+  desc "check current version of ruby"
+  task :check_ruby do
+    run "ruby -v"
   end
 end
 
@@ -58,4 +62,4 @@ namespace :thin do
 end
 
 after "deploy:update_code", :link_shared_files
-after "deploy:update_code", "deploy:bundle_install"
+#after "deploy:symlink", "deploy:bundle_install"
