@@ -47,6 +47,11 @@ namespace :deploy do
     #run "cd #{release_path} && bundle install"
     run "cd #{deploy_to}/current && bundle install"
   end
+  
+  desc "check current version of ruby"
+  task :check_ruby do
+    run "ruby -v"
+  end
 end
 
 namespace :thin do  
