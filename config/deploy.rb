@@ -5,7 +5,6 @@ set :user, 'vu2030'
 set :group, 'www-data'
 
 set :repository, "git@github.com:burza/#{application}.git"
-set :repository, "git@git.assembla.com:araso.git"
 
 set :rails_root, "#{File.expand_path(File.dirname(__FILE__)+ '/..')}"
 
@@ -25,7 +24,6 @@ role :db, "#{application}", :primary => true
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.2-p290@araso.de'
-#set :rvm_type, :system
 
 desc "Link shared files"
 task :link_shared_files do
