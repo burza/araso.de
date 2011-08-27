@@ -4,6 +4,20 @@
 
 body
   background: #efefef image_url('araso_bg8.png') top center no-repeat
+
+#center
+  padding:
+    top: $line-height * 2 !important
+    bottom: $line-height * 2 !important
+  border-top: 1px solid rgb(255,255,255)
+  border-top: 1px solid rgba(255,255,255,0.8)
+  border-bottom: 1px solid $light-grey
+  
+footer
+  border-top: 1px solid rgb(255,255,255)
+  border-top: 1px solid rgba(255,255,255,0.8)
+  padding-top: $line-height
+  
 /* =============================
 /* ! Layout for mobile version
 /* =============================
@@ -11,6 +25,8 @@ body
 @media handheld, only screen and (max-width: 767px)
   body
 
+  .logo, nav
+    text-align: center
 /* ==========================================
 /* ! Provide higher res assets for iPhone 4
 /* ==========================================
