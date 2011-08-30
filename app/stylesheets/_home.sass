@@ -37,16 +37,19 @@ figure
 
 .about
   article
-    -webkit-transition: background .5s ease-in-out
-    -moz-transition: background .5s ease-in-out
-    -o-transition: background .5s ease-in-out
-    transition: background .5s ease-in-out
     margin-bottom: $line-height
-    &:hover
-      background: rgba(255,255,255,0.2)
-
+    a
+      color: $font-color
+      -webkit-transition: color .5s ease-in-out
+      -moz-transition: color .5s ease-in-out
+      -o-transition: color .5s ease-in-out
+      transition: color .5s ease-in-out
+    &:hover a
+      color: $link-color
 footer
-  line-height: 2 * $line-height
+  +font-decorative
+  +typo-large
+  line-height: $line-height * 3
   text-align: right
   ol
     +float-left
@@ -58,3 +61,5 @@ footer
       &:hover
         border-bottom: none
   .facebook
+  .copyright
+    color: $medium-grey

@@ -34,14 +34,17 @@
   font-style: italic
 
 
-$font-size: 14px
+$font-size: 18px
 $line-height: 18px
 
-$font-size-large: 16px
+$font-size-large: 22px
 $line-height-large: $line-height * 1.2
 
-$font-size-small: 11px
+$font-size-small: 18px
 $line-height-small: $line-height
+
+=font-sans-serif
+  font-family: Helvetica, Arial, sans-serif
 
 =font-family
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif
@@ -95,7 +98,7 @@ $line-height-small: $line-height
   +line-height($line-height, $font-size)
 
 =typo-default
-  +font-family
+  +font-sans-serif
   +font-metrics($font-size, $line-height)
   +text-shadow(#FFFFFF, 0px, 1px, 0px)  
   color: $font-color
@@ -105,7 +108,6 @@ $line-height-small: $line-height
   padding: 0
 
 =typo-small
-  +font-family
   +font-metrics($font-size-small, $line-height-small)
   color: $font-color
   font-weight: normal
@@ -114,7 +116,6 @@ $line-height-small: $line-height
   padding: 0
 
 =typo-large
-  +font-family
   +font-metrics($font-size-large, $line-height-large)
   color: $font-color
   font-weight: normal
@@ -123,22 +124,26 @@ $line-height-small: $line-height
   padding: 0
 
 =h1
-  +font-metrics(24px, 24px)
+  +font-metrics(28px, 28px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h2
-  +font-metrics(18px, 18px)
+  +font-metrics(22px, 22px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h3
-  +font-metrics(16px, 16px)
+  +font-metrics(18px, 18px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h4
   +font-metrics($font-size, $line-height)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
