@@ -270,7 +270,7 @@ body {
   font-size: 18px;
   line-height: 1;
   text-shadow: white 0px 1px 0px;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -281,7 +281,7 @@ body {
 .typo-large {
   font-size: 22px;
   line-height: 0.982;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -474,7 +474,7 @@ strong {
 small {
   font-size: 18px;
   line-height: 1;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -526,12 +526,12 @@ q q:after {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003149}}
 dfn {
-  border-bottom: 1px dotted #222222;
+  border-bottom: 1px dotted #2e2e2e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003152}}
 abbr {
-  border-bottom: 1px dotted #222222;
+  border-bottom: 1px dotted #2e2e2e;
   cursor: help;
 }
 
@@ -545,7 +545,7 @@ code, var, samp, kbd {
 sub, sup {
   font-size: 18px;
   line-height: 1;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -657,7 +657,7 @@ form.standard-base abbr, form.standard-rows abbr, form.standard-columns-left abb
 form.standard-base .step-hint, form.standard-rows .step-hint, form.standard-columns-left .step-hint, form.standard-columns-right .step-hint {
   font-size: 18px;
   line-height: 1;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -673,7 +673,7 @@ form.standard-base .substep label, form.standard-rows .substep label, form.stand
   font-size: 18px;
   line-height: 1;
   text-shadow: white 0px 1px 0px;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -702,7 +702,7 @@ form.standard-base .subglobal-errors label.error-message span, form.standard-row
 form.standard-base .hint, form.standard-rows .hint, form.standard-columns-left .hint, form.standard-columns-right .hint {
   font-size: 18px;
   line-height: 1;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -937,7 +937,7 @@ p h1, p h2, p h3 {
   display: inline;
   font-size: 22px;
   line-height: 0.982;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -974,28 +974,41 @@ figure:hover figcaption {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000339}}
-.about article {
-  margin-bottom: 18px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000342}}
-.about article a {
-  color: #222222;
+.home a {
+  color: #2e2e2e;
   -webkit-transition: color 0.5s ease-in-out;
   -moz-transition: color 0.5s ease-in-out;
   -o-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000345}}
+.home:hover a {
+  color: #3465a4;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000348}}
+.about article {
+  margin-bottom: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000350}}
+.about article a {
+  color: #2e2e2e;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000356}}
 .about article:hover a {
   color: #3465a4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000358}}
 footer {
   font-family: "Gnuolane Regular", Arial, Helvetica, sans-serif;
   font-size: 22px;
   line-height: 0.982;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
@@ -1003,7 +1016,7 @@ footer {
   line-height: 54px;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000363}}
 footer ol {
   display: inline;
   float: left;
@@ -1036,16 +1049,16 @@ footer ol li:last-child {
 footer ol li.last {
   padding-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000367}}
 footer .twitter a {
   display: block;
   padding-top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000370}}
 footer .twitter a:hover {
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_home\.sass}line{font-family:\0000373}}
 footer .copyright {
   color: #646464;
 }
@@ -1104,7 +1117,7 @@ footer .copyright {
 .project .info {
   font-size: 18px;
   line-height: 1;
-  color: #222222;
+  color: #2e2e2e;
   font-weight: normal;
   text-decoration: none;
   margin: 0;
