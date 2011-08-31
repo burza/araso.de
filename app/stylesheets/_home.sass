@@ -15,12 +15,12 @@ p
   h1, h2, h3
     display: inline
     +typo-large
-figure
-  +box-shadow(#222, 0px, 0px, 2px)
+.portrait
+  +box-shadow($darkest-grey, 0px, 0px, 2px)
   position: relative
   figcaption
     background: rgb(0,0,0)
-    background: rgba(0,0,0,.5)
+    background: rgba(255,255,255,.8)
     display: block
     position: absolute
     bottom: 0px
@@ -28,6 +28,7 @@ figure
     line-height: 2 * $line-height
     text-align: center
     opacity: 0
+    text-shadow: none
     -webkit-transition: opacity .5s ease-in-out
     -moz-transition: opacity .5s ease-in-out
     -o-transition: opacity .5s ease-in-out
