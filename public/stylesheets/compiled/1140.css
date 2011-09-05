@@ -170,4 +170,10 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/1140\.sass}line{font-family:\00003114}}
+  .row .twelvecol .onecol, .row .twelvecol .twocol, .row .twelvecol .threecol, .row .twelvecol .fourcol, .row .twelvecol .fivecol, .row .twelvecol .sixcol, .row .twelvecol .sevencol, .row .twelvecol .eightcol, .row .twelvecol .ninecol, .row .twelvecol .tencol, .row .twelvecol .elevencol, .row .twelvecol .twelvecol {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }

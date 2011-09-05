@@ -1,55 +1,76 @@
 - content_for :title, "Agile Rails Solutions - Web Anwendungen und Projekte"
 - content_for :meta_keywords, "web-design, web-entwicklung, hamburg, konzeption, mindmatters, rails, agile, html5, css3, web-anwendungen, projekte"
 - content_for :meta_description, "Diverse Rails Projekte aus Hamburg. Die meisten Web-Anwendungen wurden in Ruby on Rails entwickelt. Layout und Design mit HTML5 und CSS3."
-  
+
 %section.projects
-  %h1 Web-Projekte
+  %h1.twelvecol.last Web-Projekte
 
   %article.project.threecol
     %figure
-      .overlay
+      = link_to image_tag("projects/mindmatters.png") , "http://www.mindmatters.de"
+      %figcaption
+        %h3= link_to "mindmatters.de" , "http://www.mindmatters.de"
+        %p.info Responsive Webdesign, HAML, SASS, Sinatra
+
+  %article.project.threecol
+    %figure
+      = link_to image_tag("projects/rentnroll.png"), "http://www.rent-n-roll.de"
+      %figcaption
+        %h3= link_to "rent-n-roll.de", "http://www.rent-n-roll.de/"
+        %p.info Konzeption, Layout, HAML, SASS, jQuery-Mobile, Rails
+
+  %article.project.threecol
+    %figure
+      = link_to image_tag("projects/rentnroll_mobile.png"), "http://itunes.apple.com/de/app/rentnroll-mobile/id431236473?mt=8"
+      %figcaption
+        %h3= link_to "rent-n-roll im App-Store", "http://itunes.apple.com/de/app/rentnroll-mobile/id431236473?mt=8"
+        %p.info Mobile Web-Anwendung von rent'n'roll
+
+  %article.project.threecol.last
+    %figure
       = link_to image_tag("projects/annikahirsch.png") , "http://www.annikahirsch.de"
-    %h3= link_to "annikahirsch.de" , "http://www.annikahirsch.de"
-    .info Konzeption, Layout, Typo, HAML, SASS, Rails
+      %figcaption
+        %h3= link_to "annikahirsch.de" , "http://www.annikahirsch.de"
+        %p.info Konzeption, Layout, Typo, HAML, SASS, Rails
   %article.project.threecol
     %figure
-      .overlay
-      = link_to image_tag("projects/mittagsplaner.png"), "http://mindmatters.de/#projects"
-    %h3= link_to "mittagsplaner.de", "http://mindmatters.de/#projects"
-    .info Konzeption, Layout, HAML, SASS, jQuery, Rails
+      = link_to image_tag("projects/mittagsplaner.png"), "http://mittagsplaner.de"
+      %figcaption
+        %h3= link_to "mittagsplaner.de", "http://mittagsplaner.de"
+        %p.info Konzeption, Layout, HAML, SASS, jQuery, Rails
   %article.project.threecol
     %figure
-      .overlay
-      = link_to image_tag("projects/67rockwell.png"), "http://mindmatters.de/#projects"
-    %h3= link_to "67rockwell.de", "http://mindmatters.de/#projects"
-    .info Layout, HAML, SASS, jQuery, Rails
+      = link_to image_tag("projects/67rockwell.png"), "http://67rockwell.de"
+      %figcaption
+        %h3= link_to "67rockwell.de", "http://67rockwell.de"
+        %p.info Layout, HAML, SASS, jQuery, Rails
+  %article.project.threecol
+    %figure
+      = link_to image_tag("projects/cashbits.png"), "http://cashbits.de"
+      %figcaption
+        %h3= link_to "cashbits.de", "http://cashbits.de"
+        %p.info HAML, SASS, Rails
   %article.project.threecol.last
     %figure
-      .overlay
-      = link_to image_tag("projects/cashbits.png"), "http://mindmatters.de/#projects"
-    %h3= link_to "cashbits.de", "http://mindmatters.de/#projects"
-    .info HAML, SASS, Rails
-  %article.project.threecol
-    %figure
-      .overlay
       = link_to image_tag("projects/bmb.png"), "http://www.bmb-immo.de"
-    %h3= link_to "bmb-immo.de", "http://www.bmb-immo.de"
-    .info Konzeption, Design, Layout, HAML, SASS, JavaScript, Rails
+      %figcaption
+        %h3= link_to "bmb-immo.de", "http://www.bmb-immo.de"
+        %p.info Konzeption, Design, Layout, HAML, SASS, JavaScript, Rails
   %article.project.threecol
     %figure
-      .overlay
       = link_to image_tag("projects/mylugo.png"), "http://www.mylugo.de"
-    %h3= link_to "mylugo.de", "http://www.mylugo.de"
-    .info Konzeption, Design, Layout, HTML, SASS, jQuery, Rails
+      %figcaption
+        %h3= link_to "mylugo.de", "http://www.mylugo.de"
+        %p.info Konzeption, Design, Layout, HTML, SASS, jQuery, Rails
   %article.project.threecol
     %figure
-      .overlay
       = link_to image_tag("projects/mikestar.png"), "http://www.mikestar.de"
-    %h3= link_to "mikestar.de", "http://www.mikestar.de"
-    .info Layout, HTML, CSS, JavaScript, Java
+      %figcaption
+        %h3= link_to "mikestar.de", "http://www.mikestar.de"
+        %p.info Layout, HTML, CSS, JavaScript, Java
   %article.project.threecol.last
     %figure
-      .overlay
       = link_to image_tag("projects/vileda.png"), "http://www.vileda.de"
-    %h3= link_to "vileda.de", "http://www.vileda.de"
-    .info HTML, CSS, JavaScript, Rails
+      %figcaption
+        %h3= link_to "vileda.de", "http://www.vileda.de"
+        %p.info HTML, CSS, JavaScript, Rails

@@ -47,7 +47,9 @@ p
     color: $link-color
 .about
   article
-    margin-bottom: $line-height
+    margin-bottom: $line-height * 2
+    figure
+      +box-shadow($darkest-grey, 0px, 0px, 2px)
     a
       color: $font-color
       -webkit-transition: color .5s ease-in-out
@@ -62,14 +64,10 @@ footer
   line-height: $line-height * 3
   text-align: right
   ol
-    +float-left
     +horizontal-list
-  .twitter
-    a
-      display: block
-      padding-top: 5px
-      &:hover
-        border-bottom: none
-  .facebook
+    li
+      margin-right: 10px
+  .social-media
+    text-align: center
   .copyright
     color: $medium-grey
