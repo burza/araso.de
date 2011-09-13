@@ -10,18 +10,58 @@ form.standard-base
 
 form.standard-rows
   @extend form.standard-base
-  .step-content, .subglobal-errors
-    width: 367px
-  .step-hint
-    width: 143px
   input[type=text], input[type=password],input[type=email] , textarea
-    font-size: $font-size-large
-    +font-family
+    font-size: $font-size
+    +font-sans-serif
+    width: 60%
+    padding: 10px 10px
+    +border-radius(5px)
+    border: 1px solid rgba(187, 187, 187, .66)
+    color: $dark-grey
+    background: $lightest-grey
+    &:focus
+      background: white
 form.standard-columns-left
   @extend form.standard-rows
 
 form.standard-columns-right
   @extend form.standard-columns-left
+  padding: 0px
+  label
+    line-height: 2em
   .step-title
     text-align: right
 
+.feedback
+  position: absolute
+  top: -1px
+  left: 0
+  width: 100%
+  z-index: 9
+  text-shadow: none
+  &.error
+    background: rgba(242,25,5, .5)
+    color: white
+  &.notice
+    background: rgba(138, 226, 52, .5)
+    color: $font-color
+  p
+    padding: 0 20px
+    margin: 0px
+    line-height: 2em
+    
+.btn-cta
+  +linear-gradient(color-stops($light-green 33%, darken($light-green, 10%) 67%))
+  +border-radius(5px)
+  +text-shadow(rgba(255,255,255,.5), 0px, 1px, 0px)  
+  font-size: $font-size
+  border: 1px solid darken($light-green, 10%)
+  color: $dark-grey
+  padding: 2px 15px
+  cursor: pointer
+  &:hover
+    +linear-gradient(color-stops(darken($light-green, 8%) 25%, $light-green 75%))
+    border: 1px solid darken($light-green, 10%)
+    +text-shadow(none)
+  &:active
+    background: $light-green

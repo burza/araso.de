@@ -40,7 +40,8 @@
             %li= link_to "Hobbys", about_path
       #center.row
         - flash.each do |name, msg|
-          = content_tag :div, msg, :id => "flash_#{name}", :class => "feedback #{name}"
+          - content_tag :div, :id => "flash_#{name}", :class => "feedback #{name}" do
+            %p= msg
         = yield
         
       %footer.row
