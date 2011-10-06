@@ -36,28 +36,12 @@ p
   &:hover figcaption
     opacity: 1
 
-.home
-  a
-    color: $font-color
-    -webkit-transition: color .5s ease-in-out
-    -moz-transition: color .5s ease-in-out
-    -o-transition: color .5s ease-in-out
-    transition: color .5s ease-in-out
-  &:hover a
-    color: $link-color
 .about
   article
     margin-bottom: $line-height * 2
     figure
       +box-shadow($darkest-grey, 0px, 0px, 2px)
-    a
-      color: $font-color
-      -webkit-transition: color .5s ease-in-out
-      -moz-transition: color .5s ease-in-out
-      -o-transition: color .5s ease-in-out
-      transition: color .5s ease-in-out
-    &:hover a
-      color: $link-color
+
 footer
   +font-decorative
   +typo-large
@@ -71,3 +55,5 @@ footer
     text-align: center
   .copyright
     color: $medium-grey
+  .twitter span
+    color: #2299CC

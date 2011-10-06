@@ -47,7 +47,7 @@ nav
   +h1
   font-weight: normal
   line-height: $line-height * 2
-  margin-top: $line-height * 2
+  margin-top: $line-height * 4
   margin-bottom: 0px
   ol
     +float-right
@@ -57,29 +57,19 @@ nav
     +float-left
     margin-left: 9px
     > a
-      +border-radius(10px)
-      padding: 5px 20px
-      //background: rgba(255,255,255,0.3)
-      +linear-gradient(color-stops(darken($lightest-grey, 5%), $lightest-grey 40%))
       display: block
-      -webkit-transition-property: color, background
+      margin-left: 18px
+      -webkit-transition-property: color
       -webkit-transition-duration: 0.5s, 0.5s
-      -webkit-transition-timing-function: linear, ease-in
-      -moz-transition-property: color, background
+      -webkit-transition-timing-function: linear
+      -moz-transition-property: color
       -moz-transition-duration: 0.5s
-      -moz-transition-timing-function: linear, ease-in
-      -o-transition-property: color, background 
+      -moz-transition-timing-function: linear
+      -o-transition-property: color 
       -o-transition-duration: 0.5s
-      -o-transition-timing-function: linear, ease-in
-      border-bottom: 1px solid rgba(0,0,0,0.3)
-      border-top: 1px solid white
-
+      -o-transition-timing-function: linear
       &:hover
-        //background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 40, from(rgba(63,63,63,0.8)), to(rgba(63,63,63,0.0))), rgb(34, 34, 34)
-        //background: -moz-radial-gradient(50% 100% 45deg, circle, rgba(63,63,63,0.75) 0%, rgb(34, 34, 34) 40px)      
-        color: $link-color
-        +linear-gradient(color-stops(darken($lightest-grey, 5%), $lightest-grey 40%))
-        border-top: 1px solid rgba(0,0,0,0.3)
-        border-bottom: 1px solid white
+        color: $link-hover-color
+        border-bottom: none
       &:active
         margin-top: 1px
