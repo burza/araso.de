@@ -545,7 +545,7 @@ a:active, a.active {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003103}}
 footer a {
-  color: #646464;
+  color: #646464 !important;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003106}}
@@ -558,11 +558,11 @@ footer a:focus, footer a.focus {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003110}}
 footer a:hover, footer a.hover {
-  color: #2e2e2e;
+  color: #2e2e2e !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003112}}
 footer a:active, footer a.active {
-  color: #222222;
+  color: #222222 !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/Dropbox\/my_projects\/Code\/araso\.de\/app\/stylesheets\/_typography\.sass}line{font-family:\00003116}}
