@@ -21,9 +21,9 @@ role :app, "#{application}"
 role :web, "#{application}"
 role :db, "#{application}", :primary => true
 
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.2-p290@araso.de'
+set :rvm_type, :user
 
 desc "Link shared files"
 task :link_shared_files do
