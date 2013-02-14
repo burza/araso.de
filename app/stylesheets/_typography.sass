@@ -1,11 +1,12 @@
 body
   +typo-default
-  +typo-large
 .typo-large
   +typo-large
 
 p
   margin-bottom: $line-height + 2
+  line-height: 1.3em
+  +font-sans-serif
   &.last
     margin-bottom: 0
 
@@ -17,7 +18,7 @@ h1
   +h1
 
 h2
-  +h1
+  +h2
 
 h3
   +h3
@@ -96,11 +97,34 @@ a
     color: $link-focus-color
   &:hover, &.hover
     color: $link-hover-color
-    border-bottom: 1px dotted $link-hover-color
   &:active, &.active
     color: $link-active-color
-    border-bottom: 1px dotted $link-active-color
-  
+    
+footer a
+  color: $medium-grey !important
+  text-decoration: none
+  &:visited, &.visited
+    color: $link-visited-color
+  &:focus, &.focus
+    color: $link-focus-color
+  &:hover, &.hover
+    color: $dark-grey !important
+  &:active, &.active
+    color: $darkest-grey !important
+
+.home, .about
+  a
+    color: $font-color
+    -webkit-transition: color .5s ease-in-out
+    -moz-transition: color .5s ease-in-out
+    -o-transition: color .5s ease-in-out
+    transition: color .5s ease-in-out
+  &:hover a
+    color: $link-color
+    &:hover, &.hover
+      color: $link-hover-color
+    
+
 // -------------------- //
 // Text-level semantics //
 // -------------------- //

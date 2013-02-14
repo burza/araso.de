@@ -15,6 +15,7 @@
     %meta{:property => "fb:admins", :content => "1248800830"}
     = csrf_meta_tag
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+    = stylesheet_link_tag 'compiled/1140.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     /[if lt IE 7]
@@ -22,35 +23,38 @@
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'modernizr-1.6.min', 'application'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'modernizr-custom', 'css3-mediaqueries', 'application'
     %meta{ :name => "viewport", :content => "width=device-width, user-scale=no"}
   %body
-    #container
-      %header
-        .logo
+    %img.resize{ :src => "images/resize.png" }
+    .container
+      %header.row
+        .logo.fourcol
           = link_to "araso", root_path
           .claim Awesome Rails Solutions
           // %canvas{ :id => "skyline", :width => "290px", :height => "120px", :style => ""}
-        %nav
+        %nav.eightcol.last
           %ol
             %li= link_to "Über mich", root_path
             %li= link_to "Projekte", projects_path
             %li= link_to "Hobbys", about_path
-      #center
+      #center.row
         - flash.each do |name, msg|
-          = content_tag :div, msg, :id => "flash_#{name}", :class => "feedback #{name}"
+          - content_tag :div, :id => "flash_#{name}", :class => "feedback #{name}" do
+            %p= msg
         = yield
         
-      %footer
-        %ol
+      %footer.row
+        %ol.ninecol
           %li= link_to "Impressum", impressum_path
           %li= link_to "Datenschutz", datenschutz_path
           %li= link_to "Kontakt", new_contact_path
           %li= link_to "Blog", "http://blog.araso.de"
-          %li.twitter= link_to image_tag("http://twitter-badges.s3.amazonaws.com/t_small-a.png", :alt => "Follow me on Twitter", :title => "Follow me on Twitter"), "http://www.twitter.com/burza"
-          %li.facebook <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.araso.de" layout="button_count" show_faces="false" colorscheme="dark"></fb:like>
+          %li= link_to raw("Folge <span>@burza</span> auf Twitter"), "http://www.twitter.com/burza", :class => "twitter"
+          %li
+            <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.araso.de" layout="button_count" show_faces="false" colorscheme="dark"></fb:like>
 
-        .copyright &copy; 2011 - araso.de
+        .copyright.threecol.last &copy; 2011 - araso.de
         
     %script{:type => "text/javascript"}
       var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-21690115-1']);_gaq.push(['_setDomainName', '.araso.de']);_gaq.push(['_trackPageview']);(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();

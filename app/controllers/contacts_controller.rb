@@ -6,7 +6,9 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(params[:contact])
-    if @contact.save
+    
+    if @contact.valid?
+      Notifier.contact_us(@contact).deliver
       redirect_to('/', :notice => I18n.t('contacts.messages.success'))
     else
       flash[:error] = I18n.t('errors.contact.submit')

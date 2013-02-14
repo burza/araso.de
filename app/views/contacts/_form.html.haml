@@ -1,25 +1,26 @@
-= form_for @contact, :html => { :method => :post, :class => "standard-columns-right standard-ipad" }, :builder => CatwalkFormBuilder do |f|
+= form_for @contact,:url => { :action => "create" }, :html => { :class => "standard-columns-right" }, :builder => CatwalkFormBuilder do |f|
   %ol
-    = f.step([:sender_name]) do
-      = f.label :sender_name, t('.sender_name'), :class => "step-title"
-      .step-content
+    = f.step([:sender_name], :class => "twelvecol") do
+      = f.label :sender_name, t('.sender_name'), :class => "step-title fourcol"
+      .step-content.eightcol.last
         = f.text_field :sender_name
         = f.error_label_if :sender_name
-    = f.step([:email]) do
-      = f.label :email, t('.email'), :class => "step-title"
-      .step-content
+    = f.step([:email], :class => "twelvecol") do
+      = f.label :email, t('.email'), :class => "step-title fourcol"
+      .step-content.eightcol.last
         = f.text_field :email, :type => "email"
         = f.error_label_if :email
-    = f.step([:subject]) do
-      = f.label :subject, t('.subject'), :class => "step-title"
-      .step-content
+    = f.step([:subject], :class => "twelvecol") do
+      = f.label :subject, t('.subject'), :class => "step-title fourcol"
+      .step-content.eightcol.last
         = f.text_field :subject, :size => 30
         = f.error_label_if :subject
-    = f.step([:content]) do
-      = f.label :content, t('.content'), :class => "step-title"
-      .step-content
+    = f.step([:content], :class => "twelvecol") do
+      = f.label :content, t('.content'), :class => "step-title fourcol"
+      .step-content.eightcol.last
         = f.text_area :content, :cols => 29, :rows => 7
         = f.error_label_if :content
-    %li.no-title
-      .step-content
+    %li.no-title.twelvecol
+      .fourcol
+      .step-content.eightcol.last
         %button.btn-cta{:type => "submit"}= t('.submit')

@@ -1,19 +1,26 @@
 - content_for :meta_keywords, "web-design, web-entwicklung, hamburg, konzeption, agile, mindmatters, rails, web-anwendungen, projekte, mobile"
 - content_for :meta_description, "Web-Designer aus Hamburg entwickelt und Gestaltet Web-Anwendungen aus Hamburg mit agilen Methoden."
 
-%section.content
+%section.home.sevencol
   %article
     %h1 Web-Design aus Hamburg...
-    %p Ich konzipiere und gestalte Web-Applikationen mit den aktuellsten Web-Standards. 
+    %p 
+      Ich konzipiere und gestalte Web-Applikationen mit den aktuellsten 
+      #{link_to "Web-Standards", "http://www.w3.org/standards/"}. Wenn es sein muss auch mit Photoshop. 
   %article
-    %h1 Agil...
-    %p Bei meiner Arbeit bewege ich mich auf einem agilen Pfad. 
+    %h1 Agiles Design...
+    %p 
+      Bei meiner Arbeit bewege ich mich auf einem agilen Pfad. Im Moment schreibe ich in meiner Bachelor Thesis über 
+      #{link_to "agiles Design", "http://www.slideshare.net/jeremytai/agile-is-to-as-design-is-to-programming"}.
   %article 
     %h1 Einfach, Flexibel und Mobil...
-    %p sind Eigenschaften auf die ich bei meiner Arbeit besonderen Wert lege.
+    %p 
+      Besonderen Wert lege ich auf Einfachheit, Flexibilität und Mobilität der Anwendung.
+      #{link_to "Design mobile first", "http://www.lukew.com/ff/entry.asp?933"} ist ein Ansatz bei meiner Projektearbeit.
   // durch meine arbeit überwinde ich das große hindernis zwischen design-agenturen und softwareschmieden indem ich mehr web-design und weniger grafik-design praktiziere.
-%aside
-  %figure.home
+%aside.fivecol.last
+  %figure.portrait
+    %img{ :src => "images/greg.png"}
     %figcaption 
       Ich bin Web-Designer bei
       = link_to "mindmatters", "http://www.mindmatters.de"

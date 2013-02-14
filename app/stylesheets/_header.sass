@@ -3,23 +3,20 @@
 
 header
   font-size: 18px
-  margin:
-    top: $line-height
-    bottom: $line-height * 2
+  margin-top: $line-height !important
+  padding-bottom: $line-height
   position: relative
   z-index: 100
-  canvas
-    position: absolute
-    right: 0px
-    top: 36px
+  border-bottom: 1px solid $light-grey
+  
 .logo
   a
-    +font-metrics(60px, 60px)
-    font-style: italic
+    +font-metrics(90px, 90px)
+    +font-decorative
     font-weight: bold
     margin-bottom: 0px
     text-transform: uppercase
-    color: $neon-green
+    color: $light-green
     -webkit-transition-property: text-shadow
     -webkit-transition-duration: 1s, 1s
     -webkit-transition-timing-function: linear, ease-in
@@ -30,55 +27,49 @@ header
     -o-transition-duration: 1s
     -o-transition-timing-function: linear, ease-in
     cursor: pointer
+    text-shadow:  0px 1px 0px rgba(255,255,255,0.8), 0px -1px 0px rgba(0,0,0,0.5) 
     &:hover
+      // text-shadow: 0 0 10px darken($neon-green, 30%), 0 0 20px darken($neon-green, 30%), 0 0 30px darken($neon-green, 20%), 0 0 40px $neon-green, 0 0 70px $neon-green, 0 0 80px $neon-green, 0 0 100px $neon-green, 0 0 150px $neon-green
       border-bottom: none
-      text-shadow: 0 0 10px darken($neon-green, 30%), 0 0 20px darken($neon-green, 30%), 0 0 30px darken($neon-green, 20%), 0 0 40px $neon-green, 0 0 70px $neon-green, 0 0 80px $neon-green, 0 0 100px $neon-green, 0 0 150px $neon-green
 .claim
-  font-size: 18px
-  line-height: 1.5em
-  font-style: italic
-  border-top: 1px solid rgba(255,255,255,0.1)
-  +float-left
+  +font-metrics(22px, 22px)
+  +font-decorative
+  text-transform: uppercase
+  line-height: 1em
   cursor: pointer
+  color: $medium-grey
+  text-shadow:  0px -1px 0px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.8)
 .additional
   letter-spacing: -1px
 
 nav
-  color: $font-color
+  +pie-clearfix
+  +h1
+  font-weight: normal
   line-height: $line-height * 2
-  a
-    color: $font-color
-    &:visited, &.visited
-      color: $font-color
-    &:hover, &.hover
-      color: $link-hover-color
-      border-bottom: 0px
-    &:active, &.active
-      color: $link-active-color
-  
+  margin-top: $line-height * 4
+  margin-bottom: 0px
   ol
     +float-right
     overflow: hidden
+    margin-bottom: 0px
   li
     +float-left
-    margin-left: 5px
+    margin-left: 9px
     > a
-      +border-radius(10px)
-      padding: 0 15px
-      background: $darkest-grey
       display: block
-      -webkit-transition-property: color, background
+      margin-left: 18px
+      -webkit-transition-property: color
       -webkit-transition-duration: 0.5s, 0.5s
-      -webkit-transition-timing-function: linear, ease-in
-      -moz-transition-property: color, background
+      -webkit-transition-timing-function: linear
+      -moz-transition-property: color
       -moz-transition-duration: 0.5s
-      -moz-transition-timing-function: linear, ease-in
-      -o-transition-property: color, background 
+      -moz-transition-timing-function: linear
+      -o-transition-property: color 
       -o-transition-duration: 0.5s
-      -o-transition-timing-function: linear, ease-in
+      -o-transition-timing-function: linear
       &:hover
-        background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 40, from(rgba(63,63,63,0.8)), to(rgba(63,63,63,0.0))), rgb(34, 34, 34)
-        background: -moz-radial-gradient(50% 100% 45deg, circle, rgba(63,63,63,0.75) 0%, rgb(34, 34, 34) 40px)      
-        color: $neon-yellow
+        color: $link-hover-color
+        border-bottom: none
       &:active
         margin-top: 1px

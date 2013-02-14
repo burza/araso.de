@@ -10,120 +10,58 @@ form.standard-base
 
 form.standard-rows
   @extend form.standard-base
-  .step-content, .subglobal-errors
-    // +padded-column(8, $error-message-padding)
-    width: 367px
-  .step-hint
-    // +padded-column(6, $error-message-padding)
-    width: 143px
   input[type=text], input[type=password],input[type=email] , textarea
-    font-size: $font-size-large
-    +font-family
+    font-size: $font-size
+    +font-sans-serif
+    width: 60%
+    padding: 10px 10px
+    +border-radius(5px)
+    border: 1px solid rgba(187, 187, 187, .66)
+    color: $dark-grey
+    background: $lightest-grey
+    &:focus
+      background: white
 form.standard-columns-left
   @extend form.standard-rows
-  +padded-column(16, 20px)
-  .step-title
-    +padded-column(5, 10px)
-  .step-content
-    +column(8)
-  li.no-title .step-content
-    +padded-prepend(5, 10px)
-  .subglobal-errors
-    +span(8)
-  .step-hint
-    +padded-column(6, 10px)
-    +last
 
 form.standard-columns-right
   @extend form.standard-columns-left
+  padding: 0px
+  label
+    line-height: 2em
   .step-title
     text-align: right
 
-form.two-column-test
-  @extend form.standard-columns-right
-  +padded-column(24, 20px)
-  li, .form-col
-    +padded-column(12, 10px)
-    .step-title
-      +padded-column(3, 10px)
-    .step-content
-      +column(7)
-    &.no-title .step-content, li.no-title .step-content
-      +padded-prepend(3, 10px)
-    .subglobal-errors
-      +span(7)
-    .step-hint
-      +column(2)
-      +last
-  li.last, .form-col.last
-    +last
-    .step-title
-      +column(3)
-    .step-content
-      +column(7)
-    &.no-title .step-content, li.no-title .step-content
-      +padded-prepend(3, 10px)
-    .subglobal-errors
-      +span(7)
-    .step-hint
-      +padded-column(2, 10px)
-      +last
-    &.error, li.error
-      margin-left: 20px
-      margin-right: -20px
-      padding-left: 0
-      padding-right: 10px
-      .step-hint
-        margin-right: -10px
-
-form.two-column-ol-test
-  @extend form.standard-columns-right
-  +padded-column(24, 20px)
-  .form-col
-    +padded-column(12, 10px)
-    .step-title
-      +padded-column(3, 10px)
-    .step-content
-      +column(7)
-    li.no-title .step-content
-      +padded-prepend(3, 10px)
-    .subglobal-errors
-      +span(7)
-    .step-hint
-      +column(2)
-      +last
-  .form-col.last
-    +last
-    .step-title
-      +column(3)
-    .step-content
-      +column(7)
-    li.no-title .step-content
-      +padded-prepend(3, 10px)
-    .subglobal-errors
-      +span(7)
-    .step-hint
-      +padded-column(2, 10px)
-      +last
-    li.error
-      margin-left: 0
-      margin-right: -10px
-      padding-left: 0
-      padding-right: 10px
-      .step-hint
-        margin-right: -10px
-
-form
-  .-form-address
-    .step-content
-      +column(8)
-    .substep.street, .substep.city
-      +column(6)
-      input
-        +padded-span(6, 12px)
-    .substep.streetnumber, .substep.postalcode
-      +column(2)
-      input
-        +padded-span(2, 12px)
-    .substep.last
-      +last
+.feedback
+  position: absolute
+  top: -1px
+  left: 0
+  width: 100%
+  z-index: 9
+  text-shadow: none
+  &.error
+    background: rgba(242,25,5, .5)
+    color: white
+  &.notice
+    background: rgba(138, 226, 52, .5)
+    color: $font-color
+  p
+    padding: 0 20px
+    margin: 0px
+    line-height: 2em
+    
+.btn-cta
+  +linear-gradient(color-stops($light-green 33%, darken($light-green, 10%) 67%))
+  +border-radius(5px)
+  +text-shadow(rgba(255,255,255,.5), 0px, 1px, 0px)  
+  font-size: $font-size
+  border: 1px solid darken($light-green, 10%)
+  color: $dark-grey
+  padding: 2px 15px
+  cursor: pointer
+  &:hover
+    +linear-gradient(color-stops(darken($light-green, 8%) 25%, $light-green 75%))
+    border: 1px solid darken($light-green, 10%)
+    +text-shadow(none)
+  &:active
+    background: $light-green

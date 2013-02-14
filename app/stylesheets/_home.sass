@@ -1,8 +1,6 @@
 .facets
-  +column(7, true)
   line-height: $line-height * 2
 .address
-  +column(5, true)
   text-align: right
 
 .aspect
@@ -17,78 +15,45 @@ p
   h1, h2, h3
     display: inline
     +typo-large
-figure
-  margin: 5px
-  display: block
-  +border-radius(10px)
-  +box-shadow(#222, 0px, 0px, 5px)
+.portrait
+  +box-shadow($darkest-grey, 0px, 0px, 2px)
   position: relative
   figcaption
     background: rgb(0,0,0)
-    background: rgba(0,0,0,.5)
+    background: rgba(255,255,255,.8)
     display: block
-    +border-bottom-radius(10px)
     position: absolute
     bottom: 0px
     width: 100%
     line-height: 2 * $line-height
     text-align: center
     opacity: 0
+    text-shadow: none
     -webkit-transition: opacity .5s ease-in-out
     -moz-transition: opacity .5s ease-in-out
     -o-transition: opacity .5s ease-in-out
     transition: opacity .5s ease-in-out
   &:hover figcaption
     opacity: 1
-    
-  &.home
-    width: 370px
-    height: 245px
-    background: transparent image_url('greg.png') 0px -20px no-repeat
-    +float-right
-  &.football
-    width: 370px
-    height: 245px
-    background: transparent image_url('football.png') -170px -5px no-repeat
-    +float-left
-    margin-right: 30px
-    width: 190px
-    height: 148px
-  &.bike
-    background: transparent image_url('bike.png') 0px -10px no-repeat
-    +float-left
-    margin-right: 30px
-    width: 190px
-    height: 148px
-  &.triathlon
-    background: transparent image_url('triathlon.png') -70px -115px no-repeat
-    +float-left
-    margin-right: 30px
-    width: 190px
-    height: 148px
+
 .about
   article
-    -webkit-transition: background .5s ease-in-out
-    -moz-transition: background .5s ease-in-out
-    -o-transition: background .5s ease-in-out
-    transition: background .5s ease-in-out
-    &:hover
-      background: $darkest-grey
-      +border-radius(10px)
-  p
-    padding:
-      top: $line-height / 2
-      right: 20px
+    margin-bottom: $line-height * 2
+    figure
+      +box-shadow($darkest-grey, 0px, 0px, 2px)
+
 footer
-  line-height: 2 * $line-height
+  +font-decorative
+  +typo-large
+  line-height: $line-height * 3
   text-align: right
   ol
-    +float-left
     +horizontal-list
-  .twitter
-    a
-      display: block
-      padding-top: 5px
-      &:hover
-        border-bottom: none
-  .facebook
+    li
+      margin-right: 10px
+  .social-media
+    text-align: center
+  .copyright
+    color: $medium-grey
+  .twitter span
+    color: #2299CC

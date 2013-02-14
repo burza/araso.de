@@ -1,4 +1,11 @@
 @font-face
+  font-family: 'Gnuolane Regular'
+  src: url('/fonts/Gnuolane/gnuolane_rg-webfont.eot')
+  src: local('☺'), url('/fonts/Gnuolane/gnuolane_rg-webfont.woff') format('woff'), url('/fonts/Gnuolane/gnuolane_rg-webfont.ttf') format('truetype'), url('/fonts/Gnuolane/gnuolane_rg-webfont.svg#webfontEtSsk1JN') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
   font-family: 'Droid Serif'
   src: url('/fonts/DroidSerif/DroidSerif-Regular-webfont.eot')
   src: local('☺'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.woff') format('woff'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.ttf') format('truetype'), url('/fonts/DroidSerif/DroidSerif-Regular-webfont.svg#webfontEtSsk1JN') format('svg')
@@ -27,17 +34,26 @@
   font-style: italic
 
 
-$font-size: 14px
+$font-size: 18px
 $line-height: 18px
 
-$font-size-large: 16px
+$font-size-large: 22px
 $line-height-large: $line-height * 1.2
 
-$font-size-small: 11px
+$font-size-small: 18px
 $line-height-small: $line-height
+
+$font-size-smaller: 14px
+
+
+=font-sans-serif
+  font-family: Helvetica, Arial, sans-serif
 
 =font-family
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif
+  
+=font-decorative
+  font-family: "Gnuolane Regular", Arial, Helvetica, sans-serif
 
 =font-family-monospace
   font-family: "Andale Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Courier New", Courier, monospace
@@ -85,9 +101,9 @@ $line-height-small: $line-height
   +line-height($line-height, $font-size)
 
 =typo-default
-  +font-family
+  +font-sans-serif
   +font-metrics($font-size, $line-height)
-  +text-shadow(#000000, 1px, 1px, 0px)
+  +text-shadow(#FFFFFF, 0px, 1px, 0px)  
   color: $font-color
   font-weight: normal
   text-decoration: none
@@ -95,7 +111,6 @@ $line-height-small: $line-height
   padding: 0
 
 =typo-small
-  +font-family
   +font-metrics($font-size-small, $line-height-small)
   color: $font-color
   font-weight: normal
@@ -104,7 +119,6 @@ $line-height-small: $line-height
   padding: 0
 
 =typo-large
-  +font-family
   +font-metrics($font-size-large, $line-height-large)
   color: $font-color
   font-weight: normal
@@ -113,22 +127,26 @@ $line-height-small: $line-height
   padding: 0
 
 =h1
-  +font-metrics(24px, 24px)
+  +font-metrics(28px, 28px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h2
-  +font-metrics(18px, 18px)
+  +font-metrics(22px, 22px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h3
-  +font-metrics(16px, 16px)
+  +font-metrics(18px, 18px)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
 =h4
   +font-metrics($font-size, $line-height)
+  +font-decorative
   margin-bottom: $line-height
   font-weight: bold
 
