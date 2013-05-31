@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Layout with Page Transitions</title>
+		<meta name="description" content="Fullscreen Layout with Page Transitions" />
+		<meta name="keywords" content="fullscreen layout, boxes, responsive, page transitions, css transitions, jquery, portfolio, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-about">Über mich</h2>
+					</div>
+					<div class="bl-content">
+						<h2>About this layout</h2>
+						<p>This responsive layout is based on an initial grid of four boxes. Once a box is clicked, it gets resized to fullscreen and the other boxes scale down and fade out. In the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down. To see it in action, open the work section and click on one of the portfolio items and navigate through them.</p>
+						<p>
+							<a href="http://tympanus.net/Development/ResponsiveMultiLevelMenu/"><strong>&laquo; Previous Demo</strong></a> |
+							<a href="http://tympanus.net/codrops/?p=14783"><strong>Back to the Codrops Article</strong></a>
+						</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-works">Projekte</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Was ich bisher gemacht habe!</h2>
+						<p>ÜBERBLICK ÜBER MEINE BISHERIGEN PROJEKTE UND DEREN UMFANG.</p>
+						<ul id="bl-work-items">
+							<li data-panel="panel-1"><a href="#"><img src="images/projects/jimdo.png" /></a></li>
+							<li data-panel="panel-2"><a href="#"><img src="images/projects/dlt.png" /></a></li>
+							<li data-panel="panel-3"><a href="#"><img src="images/projects/67rockwell.png" /></a></li>
+							<li data-panel="panel-4"><a href="#"><img src="images/projects/rentnroll.png" /></a></li>
+							<li data-panel="panel-5"><a href="#"><img src="images/projects/mikestar.png" /></a></li>
+							<li data-panel="panel-6"><a href="#"><img src="images/projects/mindmatters.png" /></a></li>
+							<li data-panel="panel-7"><a href="#"><img src="images/projects/cashbits.png" /></a></li>
+							<li data-panel="panel-8"><a href="#"><img src="images/projects/vileda.png" /></a></li>
+						</ul>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-blog">Leistungen</h2>
+					</div>
+					<div class="bl-content">
+						<h2>My Musings</h2>
+						<article>
+							<h3>Being a Freelance Designer</h3>
+							<p>Stumptown helvetica cardigan, odd future seitan tattooed flannel. Kale chips direct trade cray beard. 8-bit etsy butcher post-ironic blog lo-fi mcsweeney's, sustainable pickled umami flexitarian DIY ethical plaid trust fund. Wolf cred organic, terry richardson aesthetic four loko occupy vegan chillwave readymade deep... <a href="#">Read more</a></p>
+						</article>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-contact">Kontakt</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Habe ich Dein Interesse geweckt?</h2>
+						<p>KANNST DU DIR EINE ZUSAMMENARBEIT VORSTELLEN? DANN SCHREIBE MIR EINE NACHRICHT!</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+							<img src="images/projects/jimdo.png" />
+							<h3>Jimdo</h3>
+							<p><strong>Rolle: </strong>Interface-Designer</p>
+							<p><strong>Tags: </strong>HTML5, CSS3, jQuery, PHP, Photoshop, Illustrator</p>
+              <p>Jimdo ist ein Webseiten-Baukasten System. Hier war ich für Konzeption und Design verschiedener Oberflächen im CMS verantwortlich. Ausserdem zählte sowohl die Umsetzung in HTML und CSS mit Responsive-Webdesign als auch das Design von Icons und Layouts für die Benutzer der Platform zu meinen Aufgaben.</p>
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+							<img src="images/projects/dlt.png" />
+							<h3>DLT Sportmanagement</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML5, CSS3, Ruby on Rails, Photoshop, Illustrator</p>
+							<p>Hierbei handelt es sich um den Internetauftritt einer Agentur für Spielerberatung. Schwerpunkte dieses Projektes war die Konzeption und das Design der Seite, Umsetzung in HTML5 und CSS3 mit Responsive-Webdesign. Des Weiteren habe ich das Logo und die Visistenkarten entworfen.</p>
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<img src="images/projects/67rockwell.png" />
+							<h3>67rockwell</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML, CSS und jQuery</p>
+							<p>Unternehmensberatung aus Hamburg. Hierbei wurde ein bestehendes Design, welches zum Teil aus interaktiven Elementen bestand in HTML und jQuery umgesetzt und konzeptionell von mir begleitet.</p>
+						</div>
+					</div>
+					<div data-panel="panel-4">
+						<div>
+							<img src="images/projects/rentnroll.png" />
+							<h3>rentnroll iPhone-App</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML5, CSS3, Ruby on Rails, jQuery-Mobile, Photoshop</p>
+							<p>Private peer 2 peer Carsharing Platform. Günstig ein Auto mieten oder dein eigenes Auto vermieten und so Geld verdienen. Komplette Konzeption und Umsetzung der Mobilen-Webanwendung mit jQuery-Mobile.</p>
+						</div>
+					</div>
+
+					<div data-panel="panel-5">
+						<div>
+							<img src="images/projects/mikestar.png" />
+							<h3>mikestar</h3>
+							<p><strong>Rolle: </strong>Webdeveloper</p>
+							<p><strong>Tags: </strong>HTML, CSS und jQuery</p>
+							<p>Auf Mikestar konnten die Nutzer zu ihren Lieblingsliedern abrocken und durch eine spezielle Bewertung sehen ob sie gut oder schlecht dabei sind. Die Konzeption und Gestaltung verschiedener Interfaces war hier mein Hauptaufgabenfeld.</p>
+						</div>
+					</div>
+					<div data-panel="panel-6">
+						<div>
+							<img src="images/projects/mindmatters.png" />
+							<h3>mindmatters.de</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML5, CSS33, jQuery, Ruby on Rails, Photoshop</p>
+              <p>mindmatters ist ein Dienstleistungsunternehmen für Web-Anwendungen. Mein Aufgabenbereich beinhaltete Konzeption und Umsetzung verschiedenster Web- und Mobile- Anwendungen für externe Kunden.</p>
+						</div>
+					</div>
+					<div data-panel="panel-7">
+						<div>
+							<img src="images/projects/cashbits.png" />
+							<h3>cashbits</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML, CSS, Javascript, Ruby on Rails und Photoshop</p>
+              <p>CashBits ist ein Bonusprogramm - wer sich einmalig ein Konto angelegt hat, kann beim Online-Shopping Geld sparen. Meine Aufgabe bestand darin die Designvorlagen umzusetzen und das Projekt konzeptionelle zu begleiten.</p>
+						</div>
+					</div>
+					<div data-panel="panel-8">
+						<div>
+							<img src="images/projects/vileda.png" />
+							<h3>cashbits</h3>
+							<p><strong>Rolle: </strong>Webdesigner</p>
+							<p><strong>Tags: </strong>HTML, CSS, Javascript, Ruby on Rails und Photoshop</p>
+              <p>Vileda Labor - eine Datenbank an diversen Tipps und Anwendungsbeispielen zu Vileda-Produkten. Meine Aufgabe war die realisierung verschiedener Interfaces im backend Bereich der Produkt-Platform.</p>
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+	</body>
+</html>
