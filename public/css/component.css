@@ -118,7 +118,7 @@ a:hover {
 	padding: 20px;
 	width: 100%;
 	font-size: 1.8em;
-	letter-spacing: 2px;
+/*  letter-spacing: 2px;*/
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -130,7 +130,7 @@ a:hover {
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
+	line-height: 1em;
 	cursor: pointer;
 	-webkit-font-smoothing: antialiased;
 }
@@ -177,8 +177,8 @@ div.bl-panel-items > div > div {
 	pointer-events: none;
 	position: absolute;
 	top: 60px;
-	left: 30px;
-	right: 30px;
+	left: 0px;
+	right: 0px;
 	bottom: 30px;
 	padding: 0 20px;
 	overflow: hidden;
@@ -253,17 +253,17 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	opacity: 1;
-	bottom: 90px;
-	top: 90px;
+	bottom: 70px;
+	top: 60px;
 	pointer-events: auto;
 }
 
 div.bl-panel-items > div > div h3 {
 	font-size: 2.4em;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0 0 20px 0;
 }
 
@@ -298,11 +298,11 @@ div.bl-panel-items > div {
 div.bl-panel-items nav {
 	position: absolute;
 	z-index: 9999;
-	width: 216px;
-	left: 50%;
+	width: 100%;
+	left: 0;
 	top: 0px;
-	margin-left: -108px;
 	opacity: 0;
+  padding: 0 20px;
 	-webkit-transition: opacity 0.2s ease-in-out 0.5s;
 	-moz-transition: opacity 0.2s ease-in-out 0.5s;
 	transition: opacity 0.2s ease-in-out 0.5s;
@@ -310,12 +310,12 @@ div.bl-panel-items nav {
 
 div.bl-panel-items.bl-panel-items-show nav span {
 	float: left;
-	margin: 5px;
+	margin: 0 20px 0 0;
 }
 
-div.bl-panel-items nav span.bl-next-work {
+div.bl-panel-items nav * {
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	display: block;
 	text-transform: uppercase;
 	line-height: 2em;
@@ -325,7 +325,7 @@ div.bl-panel-items nav span.bl-next-work {
 
 div.bl-panel-items.bl-panel-items-show nav {
 	opacity: 1;
-	top: -70px;
+	top: -50px;
 }
 
 div.bl-panel-items > div.bl-show-work {
@@ -435,6 +435,12 @@ section.bl-expand .bl-icon-close {
 	-moz-transition: opacity 0.3s linear 0.5s;
 	transition: opacity 0.3s linear 0.5s;
 }
+div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
+  display: inline-block;
+  margin: 0;
+  height: 29px;
+  float: right;
+}
 
 @media screen and (max-width: 46.5em) {
 	.bl-content,
@@ -447,6 +453,10 @@ section.bl-expand .bl-icon-close {
 	}
 
 	.bl-content > ul li {
-		width: 40%;
+		width: 47%;
 	}
+}
+
+div#bl-panel-work-items.bl-panel-items > div > div {
+  top: 30px;
 }
