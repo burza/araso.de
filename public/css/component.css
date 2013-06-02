@@ -275,6 +275,14 @@ div.bl-panel-items > div > div img {
 	max-width: 100%;
 }
 
+img.self-portrait {
+	float: left;
+	margin: 0 20px 20px 0;
+	max-width: 100%;
+  display: block;
+  border: 8px solid rgba(0,0,0,0.1);
+}
+
 div.bl-panel-items {
 	top: 100%;
 	z-index: 9999;
