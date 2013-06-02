@@ -33,10 +33,7 @@ a {
 	color: #f0f0f0;
 	text-decoration: none;
 	font-weight: 700;
-	letter-spacing: 2px;
-	padding: 0 5px;
 	text-transform: uppercase;
-	font-size: 80%;
 }
 
 a:hover {
@@ -121,6 +118,7 @@ a:hover {
 /*  letter-spacing: 2px;*/
 	font-weight: 700;
 	text-transform: uppercase;
+  line-height: 2em;
 }
 
 .bl-icon {
@@ -283,7 +281,7 @@ div.bl-panel-items {
 }
 
 div.bl-panel-items > div {
-	background: #3ba5db;
+	background: #333333;
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
