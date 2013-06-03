@@ -33,7 +33,7 @@ a {
 	color: #f0f0f0;
 	text-decoration: none;
 	font-weight: 700;
-	text-transform: uppercase;
+/*  text-transform: uppercase;*/
 }
 
 a:hover {
@@ -155,6 +155,30 @@ a:hover {
 	content: "\e015";
 }
 
+.bl-icon-twitter:before {
+	content: "\e00c";
+}
+
+.bl-icon-xing:before {
+	content: "\e00f";
+}
+
+.bl-icon-gplus:before {
+	content: "\e00b";
+}
+
+.bl-icon-linkedin:before {
+	content: "\e003";
+}
+
+.bl-icon-facebook:before {
+	content: "\e009";
+}
+
+.bl-icon-flickr:before {
+	content: "\e00a";
+}
+
 .bl-main > section .bl-icon-close {
 	position: absolute;
 	top: 20px;
@@ -190,12 +214,14 @@ div.bl-panel-items > div > div {
 	margin: 0 auto;
 	padding-bottom: 15px;
 	font-size: 1.7em;
-	line-height: 1.8;
+	line-height: 1.8em;
+  font-family: 'Droid serif', 'serif';
+  letter-spacing: 1px;
 }
 
 .bl-content h2 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0 0 20px 0;
 }
 
@@ -239,6 +265,12 @@ div.bl-panel-items > div > div {
 	max-width: 100%;
 }
 
+ul#social-media > li a.bl-icon {
+  border: none;
+  font-size: 5em;
+  line-height: 3em;
+}
+
 /* Panel Items */
 
 div.bl-panel-items,
@@ -267,6 +299,10 @@ div.bl-panel-items > div > div h3 {
 
 div.bl-panel-items > div > div p {
 	font-size: 1.3em;
+  font-family: 'Droid serif', serif;
+  letter-spacing: 1px;
+	padding-bottom: 15px;
+	line-height: 1.8em;
 }
 
 div.bl-panel-items > div > div img {
