@@ -24,6 +24,8 @@ role :db, "#{application}", :primary => true
 
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
+require "bundler/capistrano"
+
 set :rvm_ruby_string, '1.9.2-p290@araso.de'
 set :rvm_type, :system
 
@@ -58,4 +60,4 @@ namespace :thin do
 end
 
 after "deploy:update_code", :link_shared_files
-after "deploy:update_code", "deploy:bundle_install"
+# after "deploy:update_code", "deploy:bundle_install"
