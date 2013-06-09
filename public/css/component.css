@@ -181,28 +181,56 @@ a:hover {
 
 .bl-main > section .bl-icon-close {
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 20px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 1000;
 	opacity: 0;
 	pointer-events: none;
+  text-shadow: 0 3px 0 rgba(0,0,0,.2);
 }
 
 .bl-icon-close:before {
 	content: "\e017";
+	font-size: 2.5em;
+	margin-bottom: 0px;
+  line-height: 1em;
 }
 
+#bl-about:before,
+#bl-about:after {
+  	content: '';
+  	position: absolute;
+  	top: 50px;
+  	left: 0;
+  	width: 100%;
+  	height: 20px;
+  	z-index: 100;
+  	pointer-events: none;
+  	background: -webkit-linear-gradient(top, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  	background: -moz-linear-gradient(top, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  	background: -o-linear-gradient(top, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  	background: linear-gradient(to bottom, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);  
+}
+
+#bl-about:after {
+  top: auto;
+  bottom: 10px;
+  background: -webkit-linear-gradient(bottom, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  background: -moz-linear-gradient(bottom, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  background: -o-linear-gradient(bottom, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+  background: linear-gradient(to top, rgba(236, 97, 68,1) 0%, rgba(236, 97, 68,0) 100%);
+}
 .bl-content, 
 div.bl-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
 	position: absolute;
-	top: 60px;
-	left: 0px;
+	top: 50px;
+	left: 5%;
 	right: 0px;
-	bottom: 30px;
-	padding: 0 20px;
+	bottom: 10px;
+	padding: 0 35% 0 0;
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -496,6 +524,19 @@ div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
 	.bl-content > ul li {
 		width: 47%;
 	}
+
+  .bl-content, 
+  div.bl-panel-items > div > div {
+  	left: 0;
+  	right: 0;
+  	padding: 20px;
+    top: 0;
+    
+  }
+  #bl-about:before,
+  #bl-about:after {
+    	top: 0px;
+  } 
 }
 
 div#bl-panel-work-items.bl-panel-items > div > div {
