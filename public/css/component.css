@@ -43,7 +43,7 @@ body {
 }
 
 a {
-	color: #f0f0f0;
+	color: #EFEFEF;
 	text-decoration: none;
 	font-weight: 700;
 /*  text-transform: uppercase;*/
@@ -255,7 +255,7 @@ div.bl-panel-items > div > div {
 	margin: 0 auto;
 	padding-bottom: 36px;
 	font-size: 1.7em;
-	line-height: 1.8em;
+	line-height: 1.7em;
   letter-spacing: 1px;
 }
 
@@ -269,17 +269,34 @@ div.bl-panel-items > div > div {
 	padding: 20px 40px 20px 0px;
 }
 
-.bl-content article h3 {
+.bl-content article h3,
+h3.work-category {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 0 0 10px 0;
 	padding-top: 20px;
-	font-size: 1.4em;
+	font-size: 1.7em;
+}
+
+h3.work-category {
+  border-bottom: 1px dotted rgba(255,255,255,.2);
+  margin-bottom: 20px;
+  line-height: 2em;
 }
 
 .bl-content article a {
-	color: rgba(0,0,0,0.2);
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,.8);
+  border-bottom: 1px solid rgba(255,255,255,.8);
+  -moz-transition: all .2s ease .0;
+  -webkit-transition: all .2s ease .0;
+  transition: all .2s ease .0;
+}
+
+.bl-content article a:hover {
+	color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(255,255,255);
 }
 
 .bl-content > ul {
@@ -291,6 +308,7 @@ div.bl-panel-items > div > div {
 .bl-content > ul li {
 	display: inline-block;
 	margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 .bl-content > ul li a {
@@ -528,15 +546,30 @@ div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
 #bl-contact .bl-content {
   width: 60%;
 }
-
-
+#bl-services article {
+  border-bottom: 1px dotted rgba(255,255,255,.2);
+  overflow: hidden;
+}
+#bl-services article .service {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 8px solid rgba(0,0,0,0.1);
+	float: left;
+	margin: 20px 2% 20px 0;
+	max-width: 38%;
+  display: block;
+  
+}
 @media screen and (max-width: 46.5em) {
-  img.self-portrait {
+  img.self-portrait,
+  #bl-services article .service {
     clear:both;
     max-width: 60%;
     margin: 0 auto 20px auto;
     float: none;
   }
+  
   .right-col {
     width: 100%;
   }

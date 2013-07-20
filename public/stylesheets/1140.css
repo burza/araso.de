@@ -56,7 +56,7 @@ figure img {
   margin: 0 auto;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.2-p290\@araso\.de\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/burza\/\.rvm\/gems\/ruby-1\.9\.3-p448\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .row:after {
   content: "";
   display: table;
