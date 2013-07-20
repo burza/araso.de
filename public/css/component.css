@@ -11,6 +11,15 @@
 	font-style: normal;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;  
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
 *,
@@ -27,6 +36,10 @@ body {
     background: #333;
     font-size: 0.9em;
     font-weight: 300;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    
 }
 
 a {
@@ -230,7 +243,7 @@ div.bl-panel-items > div > div {
 	left: 5%;
 	right: 0px;
 	bottom: 10px;
-	padding: 0 35% 0 0;
+	padding: 0 5% 0 0;
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -277,8 +290,7 @@ div.bl-panel-items > div > div {
 
 .bl-content > ul li {
 	display: inline-block;
-	width: 20%;
-	margin: 1%;
+	margin-right: 2%;
 }
 
 .bl-content > ul li a {
@@ -294,7 +306,7 @@ div.bl-panel-items > div > div {
 
 ul#social-media > li a.bl-icon {
   border: none;
-  font-size: 5em;
+  font-size: 3em;
   line-height: 3em;
 }
 
@@ -337,11 +349,14 @@ div.bl-panel-items > div > div img {
 	margin: 0 20px 20px 0;
 	max-width: 100%;
 }
-
+.right-col {
+  float: right;
+  width: 60%;
+}
 img.self-portrait {
 	float: left;
-	margin: 0 20px 20px 0;
-	max-width: 100%;
+	margin: 10px 2% 20px 0;
+	max-width: 38%;
   display: block;
   border: 8px solid rgba(0,0,0,0.1);
 }
@@ -510,8 +525,21 @@ div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
   height: 29px;
   float: right;
 }
+#bl-contact .bl-content {
+  width: 60%;
+}
+
 
 @media screen and (max-width: 46.5em) {
+  img.self-portrait {
+    clear:both;
+    max-width: 60%;
+    margin: 0 auto 20px auto;
+    float: none;
+  }
+  .right-col {
+    width: 100%;
+  }
 	.bl-content,
 	.bl-box {
 		font-size: 75%;
@@ -520,10 +548,18 @@ div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
 	.bl-expand .bl-box {
 		height: 130px;
 	}
-
-	.bl-content > ul li {
-		width: 47%;
-	}
+  #bl-contact .bl-content {
+    width: 100%;
+  }
+  ul#social-media > li a.bl-icon {
+    font-size: 2.6em;
+  }
+  ul#social-media > li {
+    margin-right: 5%;
+  }
+  ul#social-media > li:last-child { 
+    margin-right: 0;
+  }
 
   .bl-content, 
   div.bl-panel-items > div > div {
