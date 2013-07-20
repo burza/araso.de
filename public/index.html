@@ -9,7 +9,10 @@
 		<meta name="keywords" content="responsive webdesign, mobile, interface design, agile, html, jquery, portfolio, css, agile design" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico" /> 
+
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css' />
 		<script src="js/modernizr.custom.js"></script>
     <script type="text/javascript">
@@ -98,7 +101,7 @@
                   Bilder stehen in der Kette der Informationsaufnahme an erster Stelle. Sie helfen dem Team und Außenstehenden ungemein, schnell den Anschluss zu finden und das Grobkonzept zu erfassen. Skizzen sind außerdem ein guter Startpunkt für die Team-Arbeit, denn mit Stift und Papier bewaffnet lassen sich gut gemeinsame Lösungen erarbeiten. Visuelles Denken ist nicht nur ein Werkzeug, sondern eine Arbeitseinstellung: Lieber Stift und Papier in die Hand nehmen, Prototypen sprechen lassen und nach Konkretheit streben – als stundenlang um den heißen Brei herum reden.
                 </p>
               </div>
-              <img src="images/konzept_teaser.png" class="service" width="300"/>
+              <div class="img-decorator"><img src="images/konzept_teaser.png" class="service" width="300"/></div>
 						</article>
             <article>
               <div class="right-col">
@@ -108,7 +111,7 @@
                   Ich bringe nicht nur Typographie, Icons, Farben und Designelemente für dich in einklang, sondern kümmere mich auch um das Branding und deine corporate identity. Du erhälst also eine ganzheitliche Lösung von Logo über Visitenkarten bis hin zur Webanwendung oder Seite – alles aus einer Hand. Heutzutage müssen Webanwendungen oder Webauftritte flexibel und anpassbar an ihren Lebensraum sein, bei mir erhälst du das passende responsive Webdesign für deine Idee. Somit ist deine Seite von allen mobilen Endgeräten aus benutzbar und folglich auch Zukunftssicher.
                 </p>
               </div>
-              <img src="images/design_teaser.png" class="service" width="300"/>
+              <div class="img-decorator"><img src="images/design_teaser.png" class="service" width="300"/></div>
 						</article>
             <article>
               <div class="right-col">
@@ -116,7 +119,7 @@
                 <p>Bei mir gibt es keine reine Entwicklungsphase. Die Entwicklung deines Design geht nahtlos in die Entwicklung deiner Anwendung über. Durch ständige synchronisation und enge Zusammenarbeit mit den Entwicklern verschwänden wir keine Zeit und kein Geld bei der technischen Umsetzung einer Photoshop Datei. Durch die iterative Erstellung interaktiver Prototypen bin ich in der Lage diese direkt in deine Anwendung zu integrieren. Ich verstecke mich nicht in meiner kreativen Blase und isoliere mich vom rest des Teams ab. Wir entwickeln gemeinsam das Design und setzen es schnellstmöglich in benutzbare Prototypen um. In folge dessen erhälst du schnelles Feedback deiner Benutzer und bekommst die Möglichkeit die eingesparte Zeit bei der Entwicklung bereits in die Verbesserung deiner Anwendung einfließen zu lassen.</p>
                 <p>Ich bin auf HTML5, CSS3 und Javascript spezialisiert. Durch Verwendung der aktuellsten Technologien und modernsten jQuery Plugins erhällst du von mir nicht nur ein professionell aussehendes Design sondern eben auch eins was sich gut anfühlt. Bei der Entwicklung achte ich nicht nur auf intuitive Benutzeroberflächen, ebenfalls ist die haptik deiner Seite für eine positive Benutzererfahrung enorm von Vorteil. Den wenn deine Besucher Spaß auf deiner Seite empfinden und sie ihr Problem einfach lösen können, dann kommen sie auch garantiert wieder! In den letzten Jahren war ich überwiegend in Ruby on Rails Projekten tätig und fühle mich dort wie zu Hause, ich habe aber aufgrund meines Informatik Studiums keine Probleme mich in anderen technischen Umgebungen schnell zurecht zu finden.</p>
               </div>
-              <img src="images/development_teaser.png" class="service" width="300"/>
+              <div class="img-decorator"><img src="images/development_teaser.png" class="service" width="300"/></div>
 						</article>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
@@ -244,7 +247,12 @@
 					<div data-panel="panel-11">
 						<div>
 							<h3>Windows Phone</h3>
-							<img src="images/projects/rwd/windows_phone_1.png" width="640" />
+              <a href="images/projects/rwd/windows_phone_1.png" class="fancybox"><img src="images/projects/rwd/windows_phone.png" width="600" /></a>
+              <div class="hidden">
+                <a href="images/projects/rwd/windows_phone_2.png" class="fancybox"></a>
+                <a href="images/projects/rwd/windows_phone_3.png" class="fancybox"></a>
+                <a href="images/projects/rwd/windows_phone_4.png" class="fancybox"></a>                
+              </div>
 							<p><strong>Rolle: </strong>Webdesigner</p>
 							<p><strong>Tags: </strong>HTML5, CSS3, jQuery</p>
               <p>Mobile Landingpage für das neue Windows Phone - Nokia Lumia 925.</p>
@@ -252,8 +260,8 @@
 					</div>
 					<div data-panel="panel-12">
 						<div>
-							<h3>Interface</h3>
-							<img src="images/projects/rwd/setttings_interface.png" width="640" />
+							<h3>Interface-Prototyp</h3>
+              <a href="images/projects/rwd/setttings_interface.png" class="fancybox-if"><img src="images/projects/rwd/interface.png" width="600" /></a>
 							<p><strong>Rolle: </strong>Webdesigner</p>
 							<p><strong>Tags: </strong>HTML, CSS, Illustrator und Photoshop</p>
               <p>Prototyp für ein Interface einer Webanwendung.</p>
@@ -262,7 +270,13 @@
 					<div data-panel="panel-13">
 						<div>
 							<h3>DLT Sportmanagement</h3>
-							<img src="images/projects/rwd/dlt_index.png" width="640" />
+              <a href="images/projects/rwd/dlt_index.png" class="fancybox-dlt"><img src="images/projects/rwd/dlt.png" width="600" /></a>
+              <div class="hidden">
+                <a href="images/projects/rwd/dlt_management.png" class="fancybox-dlt"></a>
+                <a href="images/projects/rwd/dlt_nav.png" class="fancybox-dlt"></a>
+                <a href="images/projects/rwd/dlt_players.png" class="fancybox-dlt"></a>                
+              </div>
+
 							<p><strong>Rolle: </strong>Webdesigner</p>
 							<p><strong>Tags: </strong>HTML5, CSS3, Ruby on Rails, Photoshop, Illustrator</p>
               <p>Hierbei handelt es sich um den Internetauftritt einer Agentur für Spielerberatung. Schwerpunkte dieses Projektes war die Konzeption und das Design der Seite, Umsetzung in HTML5 und CSS3 mit Responsive-Webdesign. Des Weiteren habe ich das Logo und die Visistenkarten entworfen.</p>
@@ -280,6 +294,7 @@
 		<script src="js/fastclick.js"></script>
 		<script src="js/application.js"></script>
 		<script src="js/boxlayout.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
 		<script>
 			$(function() {
 				Boxlayout.init();
