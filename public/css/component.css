@@ -564,11 +564,15 @@ div.bl-panel-items.bl-panel-items-show nav span.bl-icon.bl-icon-close {
   -webkit-border-radius: 50%;
   border: 8px solid rgba(0,0,0,0.1);
 	float: left;
-	margin: 20px 2% 20px 0;
-	max-width: 38%;
+	margin: 20px 10% 20px 0;
+	max-width: 30%;
 }
 @media screen and (max-width: 46.5em) {
 /*#bl-services article .service*/
+  .bl-content > ul li {
+    width: 47%;
+  }
+  
   img.self-portrait {
     clear:both;
     max-width: 60%;
