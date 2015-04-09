@@ -228,8 +228,9 @@ h3.work-category {
 
 .bl-content > ul li {
 	display: inline-block;
-	margin-right: 2%;
-  margin-bottom: 2%;
+	margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc((100% / 4) - 23px);
 }
 
 .bl-content > ul li a {
@@ -483,10 +484,25 @@ div.bl-panel-items.bl-panel-items-show nav .icon-cancel {
 	margin: 20px 10% 20px 0;
 	max-width: 30%;
 }
-@media screen and (max-width: 46.5em) {
+
+div#bl-panel-work-items.bl-panel-items > div > div {
+  top: 30px;
+}
+
+.bl-box [class*='icon-']:before {
+	display: block;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.bl-box .icon-rocket:before {
+	transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
 /*#bl-services article .service*/
   .bl-content > ul li {
-    width: 47%;
+    width: calc((100% / 2) - 22px);
   }
 
   img.self-portrait {
@@ -540,18 +556,9 @@ div.bl-panel-items.bl-panel-items-show nav .icon-cancel {
   }
 }
 
-div#bl-panel-work-items.bl-panel-items > div > div {
-  top: 30px;
+
+@media screen and (max-width: 459px) {
+  .bl-content > ul li {
+    width: 100%;
+  }
 }
-
-.bl-box [class*='icon-']:before {
-	display: block;
-	font-size: 2em;
-	margin-bottom: 10px;
-}
-
-.bl-box .icon-rocket:before {
-	transform: rotate(45deg);
-}
-
-
