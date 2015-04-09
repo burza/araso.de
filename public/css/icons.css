@@ -23,15 +23,27 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cancel:before {
+	content: "\e606";
+}
+
+.icon-linkedin:before {
+	content: "\e605";
+}
+
+.icon-xing:before {
+	content: "\e005";
+}
+
+.icon-twitter:before {
+	content: "\e00d";
+}
+
 .icon-suitcase:before {
 	content: "\e600";
 }
 
-.icon-cancel:before {
-	content: "\e601";
-}
-
-.icon-rocket2:before {
+.icon-rocket:before {
 	content: "\e602";
 }
 
@@ -43,120 +55,8 @@
 	content: "\e604";
 }
 
-.icon-rocket:before {
-	content: "\e000";
-}
-
-.icon-briefcase:before {
-	content: "\e001";
-}
-
-.icon-eye:before {
-	content: "\e002";
-}
-
-.icon-linkedin:before {
-	content: "\e003";
-}
-
-.icon-github:before {
-	content: "\e004";
-}
-
-.icon-xing:before {
-	content: "\e005";
-}
-
-.icon-googleplus:before {
-	content: "\e006";
-}
-
-.icon-flickr:before {
-	content: "\e007";
-}
-
-.icon-facebook:before {
-	content: "\e008";
-}
-
-.icon-facebook2:before {
-	content: "\e009";
-}
-
-.icon-flickr2:before {
-	content: "\e00a";
-}
-
-.icon-googleplus2:before {
-	content: "\e00b";
-}
-
-.icon-twitter:before {
-	content: "\e00c";
-}
-
-.icon-twitter2:before {
-	content: "\e00d";
-}
-
-.icon-github2:before {
-	content: "\e00e";
-}
-
-.icon-xing2:before {
-	content: "\e00f";
-}
-
-.icon-user:before {
-	content: "\e010";
-}
-
-.icon-stack:before {
-	content: "\e011";
-}
-
-.icon-envelop:before {
-	content: "\e012";
-}
-
-.icon-location:before {
-	content: "\e013";
-}
-
-.icon-phone:before {
-	content: "\e014";
-}
-
-.icon-mobile:before {
-	content: "\e015";
-}
-
-.icon-arrow-up:before {
-	content: "\e016";
-}
-
-.icon-cancel-circle:before {
-	content: "\e017";
-}
-
-.icon-pen:before {
-	content: "\e018";
-}
-
-.icon-eye2:before {
-	content: "\e019";
-}
-
-.icon-megaphone:before {
-	content: "\e060";
-}
-
 .icon-users:before {
 	content: "\e186";
-}
-
-.icon-users2:before {
-	content: "\e18d";
 }
 
 .icon-mail:before {
