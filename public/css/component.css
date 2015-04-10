@@ -187,47 +187,31 @@ div.bl-panel-items > div > div {
 	padding-bottom: 36px;
 	font-size: 1.7em;
 	line-height: 1.5em;
-	letter-spacing: 1px;
 }
 
 .bl-content h2 {
+	letter-spacing: 1px;
 	font-size: 3em;
 	font-weight: 400;
 	margin: 0 0 20px 0;
 }
 
-.bl-content article {
-	padding: 20px 40px 20px 0px;
+.bl-content h3 {
+	letter-spacing: 1px;
+  font-size: 1.7em;
+  font-weight: 700;
+	margin: 0 0 20px 0;
 }
 
-.bl-content article h3,
 h3.work-category {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	padding-top: 20px;
 	font-size: 1.7em;
-}
-
-h3.work-category {
 	border-bottom: 1px dotted rgba(255,255,255,.2);
-	margin-bottom: 20px;
 	line-height: 2em;
-}
-
-.bl-content article a {
-	color: rgb(255,255,255);
-	color: rgba(255,255,255,.8);
-	border-bottom: 1px solid rgba(255,255,255,.8);
-	-moz-transition: all .2s ease .0;
-	-webkit-transition: all .2s ease .0;
-	transition: all .2s ease .0;
-}
-
-.bl-content article a:hover {
-	color: rgb(255,255,255);
-	border-bottom: 1px solid rgb(255,255,255);
 }
 
 .bl-content > ul {
@@ -474,24 +458,6 @@ div.bl-panel-items.bl-panel-items-show nav .icon-cancel {
 	float: right;
 }
 
-#bl-services article {
-	border-bottom: 1px dotted rgba(255,255,255,.2);
-	overflow: hidden;
-}
-
-#bl-services article .service {
-	display: block;
-}
-
-.img-decorator {
-	overflow: hidden;
-	border-radius: 50%;
-	border: 8px solid rgba(0,0,0,0.1);
-	float: left;
-	margin: 20px 10% 20px 0;
-	max-width: 30%;
-}
-
 div#bl-panel-work-items.bl-panel-items > div > div {
 	top: 30px;
 }
@@ -557,6 +523,11 @@ div#bl-panel-work-items.bl-panel-items > div > div {
   padding-bottom: 60px;
 }
 
+.team-member-container--full {
+  max-width: none;
+  width: 100%;
+}
+
 .team-member-container:last-child {
 	border: 0;
 }
@@ -595,6 +566,11 @@ div#bl-panel-work-items.bl-panel-items > div > div {
   margin: 10px 0;
   text-align: center;
   width: 80%;
+}
+
+.styled-list {
+	font-size: 1.7em;
+	line-height: 2em;
 }
 
 
@@ -671,8 +647,12 @@ div#bl-panel-work-items.bl-panel-items > div > div {
 	.social-media a[class*='icon-'] {
 		font-size: 4em;
 	}
-	.bl-content .team-member-container h2 {
+	.bl-content .team-member-container h2,
+	.bl-content .team-member-container h3 {
 		margin: 20px 0;
 	}
+	.styled-list {
+		list-style: none;
+		padding: 0;
+	}
 }
-
