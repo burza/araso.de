@@ -51,6 +51,7 @@ a {
 
 a:hover {
 	color: #fff;
+	cursor: pointer;
 }
 
 .container { height: 100%; }
@@ -244,6 +245,12 @@ h3.work-category {
 	display: block;
 	padding: 0;
 	border: 8px solid rgba(0,0,0,0.1);
+	-moz-transition: border-color .3s ease .0;
+  -webkit-transition: border-color .3s ease .0;
+  transition: border-color .3s ease .0;
+}
+.bl-content > ul li a:hover {
+	border: 8px solid #f2ede3;
 }
 
 .bl-content > ul li a img {
