@@ -20,6 +20,20 @@ $(document).ready(function() {
         loop: true
   });
 
+  $(".fancybox-goldbek")
+    .attr('rel', 'gallery_goldbek')
+    .fancybox({
+        padding : 0,
+        loop: true
+  });
+
+  $(".fancybox-konen")
+    .attr('rel', 'gallery_konen')
+    .fancybox({
+        padding : 0,
+        loop: true
+  });
+
   $(".fancybox-dlt")
     .attr('rel', 'gallery_dlt')
     .fancybox({

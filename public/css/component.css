@@ -23,6 +23,13 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
   display: none;
 }
 
+.img-responsive {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #f2ede3;
@@ -262,7 +269,7 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	width: 100%;
+	/*width: 100%;*/
 	margin: 0 auto;
 	opacity: 1;
 	bottom: 70px;
@@ -283,11 +290,6 @@ div.bl-panel-items > div > div p {
 	line-height: 1.8em;
 }
 
-div.bl-panel-items > div > div img {
-	float: left;
-	margin: 0 20px 20px 0;
-	max-width: 100%;
-}
 .right-col {
   float: right;
   width: 60%;
@@ -497,6 +499,24 @@ div#bl-panel-work-items.bl-panel-items > div > div {
 
 .bl-box .icon-rocket:before {
 	transform: rotate(45deg);
+}
+
+.bl-show-work {
+
+}
+.bl-show-work-image {
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+.bl-show-work-image > a {
+	display: block;
+	border: 8px solid rgba(0,0,0,0.1);
+}
+
+.bl-show-work-description {
+	width: 50%;
+	float: left;
 }
 
 @media screen and (max-width: 767px) {
