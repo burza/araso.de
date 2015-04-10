@@ -1,14 +1,20 @@
-$(document).ready(function() {  
+$(document).ready(function() {
   FastClick.attach(document.body);
-  
-  $(".fancybox")
-    .attr('rel', 'gallery_windows')
-    .fancybox({
-        padding : 0,
-        loop: true
-  });
-  $(".fancybox-if")
-    .attr('rel', 'gallery_if')
+
+  $(".fancybox").fancybox(
+    {
+      padding : 0
+    }
+  );
+
+  $(".fancybox-if").fancybox(
+    {
+      padding : 0
+    }
+  );
+
+  $(".fancybox-wp")
+    .attr('rel', 'gallery_wp')
     .fancybox({
         padding : 0,
         loop: true

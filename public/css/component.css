@@ -562,3 +562,22 @@ div#bl-panel-work-items.bl-panel-items > div > div {
     width: 100%;
   }
 }
+
+.bl-content > ul li a.bl-work-customer {
+	height: 180px;
+	display: flex;
+}
+
+.bl-content > ul li a.bl-work-customer > img {
+  -moz-transition: opacity .3s ease-in .0;
+  -webkit-transition: opacity .3s ease-in .0;
+  transition: opacity .3s ease-in .0;
+	max-width: none;
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  opacity: .6;
+}
+.bl-content > ul li a.bl-work-customer:hover > img {
+	opacity: 1;
+}
