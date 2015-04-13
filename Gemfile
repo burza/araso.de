@@ -14,7 +14,10 @@ gem 'thin'
 
 # Deploy with Capistrano
 gem 'capistrano'
-gem 'rvm-capistrano', '~> 1.3.0',  require: false
+
+group :production do
+	gem 'rvm-capistrano', '~> 1.3.0'
+end
 
 # To use debugger
 # gem 'ruby-debug'
