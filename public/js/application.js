@@ -1,6 +1,16 @@
 $(document).ready(function() {
   FastClick.attach(document.body);
 
+  $('.bl-link').on('click', function() {
+    var target = $(this).data('target');
+    var panel = $(this).data('target-panel');
+
+    $('#bl-main').removeClass('bl-expand-item');
+    $('.bl-expand.bl-expand-top').removeClass('bl-expand bl-expand-top');
+    $(target).trigger('click');
+    $("[data-panel='" + panel + "']").trigger('click');
+  });
+
   $(".fancybox").fancybox(
     {
       padding : 0
