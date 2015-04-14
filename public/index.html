@@ -31,7 +31,8 @@
 
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+		<link rel="stylesheet" type="text/css" href="css/photoswipe.css">
+		<link rel="stylesheet" type="text/css" href="css/default-skin/default-skin.css">
 
 		<script src="js/modernizr.custom.js"></script>
 		<script type="text/javascript">
@@ -108,35 +109,35 @@
 						<p>Übersicht unserer bisherigen Kunden sowie Auswahl einiger Projekte, die wir als Agentur begleitet habe.</p>
 						<h3 class="work-category">Unsere Kunden</h3>
 						<ul id="bl-work-customers">
-							<li><a class="bl-work-customer" href="http://www.goldbek-design.de"><img src="images/customer/goldbek.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.konen.de"><img src="images/customer/konen.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.akra.de"><img src="images/customer/akra.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.brandslisten.de"><img src="images/customer/brandslisten.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.hamburg-startups.net/"><img src="images/customer/hhstartups.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.appmotion.de/"><img src="images/customer/appmotion.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.wlw.de/"><img src="images/customer/wlw.svg" /></a></li>
-							<li><a class="bl-work-customer" href="http://www.jimdo.com/"><img src="images/customer/jimdo.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.goldbek-design.de"><img src="images/customer/goldbek.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.konen.de"><img src="images/customer/konen.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.akra.de"><img src="images/customer/akra.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.brandslisten.de"><img src="images/customer/brandslisten.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.hamburg-startups.net/"><img src="images/customer/hhstartups.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.appmotion.de/"><img src="images/customer/appmotion.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.wlw.de/"><img src="images/customer/wlw.svg" /></a></li>
+							<li class="bl-work-item"><a class="bl-work-customer" href="http://www.jimdo.com/"><img src="images/customer/jimdo.svg" /></a></li>
 						</ul>
 
 						<h3 class="work-category">Webanwendungen</h3>
-						<ul id="bl-work-items">
-							<li data-panel="panel-1"><a href="#"><img src="images/projects/goldbek/goldbek_overview_small.jpg" /></a></li>
-							<li data-panel="panel-2"><a href="#"><img src="images/projects/konen/konen_overview_small.jpg" /></a></li>
+						<ul class="bl-work-items">
+							<li class="bl-work-item bl-work-item--with-panel" data-panel="panel-1"><a href="#"><img src="images/projects/goldbek/goldbek_overview_small.jpg" /></a></li>
+							<li class="bl-work-item bl-work-item--with-panel" data-panel="panel-2"><a href="#"><img src="images/projects/konen/konen_overview_small.jpg" /></a></li>
 						</ul>
 
 						<h3 class="work-category">Corporate Identity</h3>
-						<ul>
-							<li><a href="images/projects/ci/araso_vcard.jpg" class="fancybox"><img src="images/projects/araso_cut.jpg" /></a></li>
-							<li><a href="images/projects/ci/dlt_vcard.jpg" class="fancybox"><img src="images/projects/dlt_cut.jpg" /></a></li>
-							<li><a href="images/projects/ci/kikasola_vcard.jpg" class="fancybox"><img src="images/projects/kikasola_cut.jpg" /></a></li>
-							<li><a href="images/projects/ci/mmahrez_vcard.jpg" class="fancybox"><img src="images/projects/mmahrez_cut.jpg" /></a></li>
+						<ul class="bl-work-items">
+							<li class="bl-work-item"><div data-url="images/projects/ci/araso_vcard.jpg" class="photoswipe"><img src="images/projects/araso_cut.jpg" /></div></li>
+							<li class="bl-work-item"><div data-url="images/projects/ci/dlt_vcard.jpg" class="photoswipe"><img src="images/projects/dlt_cut.jpg" /></div></li>
+							<li class="bl-work-item"><div data-url="images/projects/ci/kikasola_vcard.jpg" class="photoswipe"><img src="images/projects/kikasola_cut.jpg" /></div></li>
+							<li class="bl-work-item"><div data-url="images/projects/ci/mmahrez_vcard.jpg" class="photoswipe"><img src="images/projects/mmahrez_cut.jpg" /></div></li>
 						</ul>
 
 						<h3 class="work-category">Responsive Webdesign</h3>
-						<ul id="bl-work-items">
-							<li data-panel="panel-11"><a href="#"><img src="images/projects/rwd/windows_phone.png" /></a></li>
-							<li data-panel="panel-12"><a href="#"><img src="images/projects/rwd/interface.png" /></a></li>
-							<li data-panel="panel-13"><a href="#"><img src="images/projects/rwd/dlt.png" /></a></li>
+						<ul class="bl-work-items">
+							<li class="bl-work-item bl-work-item--with-panel" data-panel="panel-11"><a href="#"><img src="images/projects/rwd/windows_phone.png" /></a></li>
+							<li class="bl-work-item bl-work-item--with-panel" data-panel="panel-12"><a href="#"><img src="images/projects/rwd/interface.png" /></a></li>
+							<li class="bl-work-item bl-work-item--with-panel" data-panel="panel-13"><a href="#"><img src="images/projects/rwd/dlt.png" /></a></li>
 						</ul>
 
 					</div>
@@ -332,12 +333,11 @@
 						<div>
 							<h3>DLT Sportmanagement</h3>
 							<div class="bl-show-work-image">
-								<a href="images/projects/rwd/dlt_index.png" class="fancybox-dlt" rel="gallery_dlt"><img src="images/projects/rwd/dlt.png" class="img-responsive" /></a>
-								<div class="hidden">
-									<a href="images/projects/rwd/dlt_management.png" class="fancybox-dlt" rel="gallery_dlt"></a>
-									<a href="images/projects/rwd/dlt_nav.png" class="fancybox-dlt" rel="gallery_dlt"></a>
-									<a href="images/projects/rwd/dlt_players.png" class="fancybox-dlt" rel="gallery_dlt"></a>
-								</div>
+								<img src="images/projects/rwd/dlt.png" class="img-responsive testbtn" />
+								<div class="bl-show-work-image-gallery hidden" data-url="images/projects/rwd/dlt_index.png"></div>
+								<div class="bl-show-work-image-gallery hidden" data-url="images/projects/rwd/dlt_management.png"></div>
+								<div class="bl-show-work-image-gallery hidden" data-url="images/projects/rwd/dlt_nav.png"></div>
+								<div class="bl-show-work-image-gallery hidden" data-url="images/projects/rwd/dlt_players.png"></div>
 							</div>
 							<div class="bl-show-work-description">
 								<p><strong>Rolle: </strong><br/>Webdesigner</p>
@@ -353,12 +353,79 @@
 					</nav>
 				</div>
 			</div>
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+			    <!-- Background of PhotoSwipe.
+			         It's a separate element as animating opacity is faster than rgba(). -->
+			    <div class="pswp__bg"></div>
+
+			    <!-- Slides wrapper with overflow:hidden. -->
+			    <div class="pswp__scroll-wrap">
+
+			        <!-- Container that holds slides.
+			            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+			            Don't modify these 3 pswp__item elements, data is added later on. -->
+			        <div class="pswp__container">
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			        </div>
+
+			        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			        <div class="pswp__ui pswp__ui--hidden">
+
+			            <div class="pswp__top-bar">
+
+			                <!--  Controls are self-explanatory. Order can be changed. -->
+
+			                <div class="pswp__counter"></div>
+
+			                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+			                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+			                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+			                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+			                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+			                <!-- element will get class pswp__preloader--active when preloader is running -->
+			                <div class="pswp__preloader">
+			                    <div class="pswp__preloader__icn">
+			                      <div class="pswp__preloader__cut">
+			                        <div class="pswp__preloader__donut"></div>
+			                      </div>
+			                    </div>
+			                </div>
+			            </div>
+
+			            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+			                <div class="pswp__share-tooltip"></div>
+			            </div>
+
+			            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			            </button>
+
+			            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			            </button>
+
+			            <div class="pswp__caption">
+			                <div class="pswp__caption__center"></div>
+			            </div>
+
+			        </div>
+
+			    </div>
+
+			</div>
 		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/fastclick.js"></script>
-		<script src="js/application.js"></script>
 		<script src="js/boxlayout.js"></script>
-		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/photoswipe.min.js"></script>
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script src="js/application.js"></script>
 		<script>
 			$(function() {
 				Boxlayout.init();

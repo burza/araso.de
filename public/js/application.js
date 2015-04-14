@@ -1,3 +1,24 @@
+var openPhotoSwipe = function(items) {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    var items = items;
+
+    // define options (if needed)
+    var options = {
+        bgOpacity: 0.85,
+        closeEl:true,
+        captionEl: false,
+        fullscreenEl: false,
+        zoomEl: false,
+        shareEl: false,
+        counterEl: true,
+        arrowEl: true,
+        preloaderEl: true,
+    };
+
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
 $(document).ready(function() {
   FastClick.attach(document.body);
 
@@ -11,43 +32,16 @@ $(document).ready(function() {
     $("[data-panel='" + panel + "']").trigger('click');
   });
 
-  $(".fancybox").fancybox(
-    {
-      padding : 0
-    }
-  );
-
-  $(".fancybox-if").fancybox(
-    {
-      padding : 0
-    }
-  );
-
-  $(".fancybox-wp")
-    .attr('rel', 'gallery_wp')
-    .fancybox({
-        padding : 0,
-        loop: true
-  });
-
-  $(".fancybox-goldbek")
-    .attr('rel', 'gallery_goldbek')
-    .fancybox({
-        padding : 0,
-        loop: true
-  });
-
-  $(".fancybox-konen")
-    .attr('rel', 'gallery_konen')
-    .fancybox({
-        padding : 0,
-        loop: true
-  });
-
-  $(".fancybox-dlt")
-    .attr('rel', 'gallery_dlt')
-    .fancybox({
-        padding : 0,
-        loop: true
+  $('.photoswipe').each(function(index , elem) {
+    $(elem).on('click', function() {
+      var items = [
+          {
+              src: $(this).data('url'),
+              w: 1622,
+              h: 1171
+          }
+      ];
+      openPhotoSwipe(items);
+    });
   });
 });
