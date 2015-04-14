@@ -33,15 +33,17 @@ $(document).ready(function() {
   });
 
   $('.bl-gallery').each( function(index, trigger) {
-    var items = [];
     $(trigger).on('click', function() {
+      var items = [];
       var gallery = $(this).data('gallery');
       $(gallery).children().each( function(index, image) {
+        var size = $(image).data('size').split('x');
+
         items.push(
           {
             src: $(image).data('url'),
-            w: 1622,
-            h: 1171
+            w: parseInt(size[0], 10),
+            h: parseInt(size[1], 10)
           }
         );
       });
@@ -52,11 +54,11 @@ $(document).ready(function() {
   $('.photoswipe').each(function(index , elem) {
     $(elem).on('click', function() {
       var items = [
-          {
-              src: $(this).data('url'),
-              w: 1622,
-              h: 1171
-          }
+        {
+          src: $(this).data('url'),
+          w: 1622,
+          h: 1171
+        }
       ];
       openPhotoSwipe(items);
     });
