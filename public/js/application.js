@@ -32,6 +32,23 @@ $(document).ready(function() {
     $("[data-panel='" + panel + "']").trigger('click');
   });
 
+  $('.bl-gallery').each( function(index, trigger) {
+    var items = [];
+    $(trigger).on('click', function() {
+      var gallery = $(this).data('gallery');
+      $(gallery).children().each( function(index, image) {
+        items.push(
+          {
+            src: $(image).data('url'),
+            w: 1622,
+            h: 1171
+          }
+        );
+      });
+      openPhotoSwipe(items);
+    });
+  });
+
   $('.photoswipe').each(function(index , elem) {
     $(elem).on('click', function() {
       var items = [
