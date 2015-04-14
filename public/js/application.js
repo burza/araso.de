@@ -53,11 +53,13 @@ $(document).ready(function() {
 
   $('.photoswipe').each(function(index , elem) {
     $(elem).on('click', function() {
+      var size = $(elem).data('size').split('x');
+
       var items = [
         {
           src: $(this).data('url'),
-          w: 1622,
-          h: 1171
+          w: parseInt(size[0], 10),
+          h: parseInt(size[1], 10)
         }
       ];
       openPhotoSwipe(items);
