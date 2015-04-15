@@ -520,10 +520,14 @@ div#bl-panel-work-items.bl-panel-items > div > div {
 	margin-bottom: 40px;
 }
 
+.lead a {
+	font-weight: 100;
+	border-bottom: 1px solid #f2ede3;
+}
+
 .lead > h1 {
 	text-transform: uppercase;
 	font-size: 32px;
-	font-weight: 100;
 	line-height: 1.3em;
 }
 
@@ -547,6 +551,7 @@ div#bl-panel-work-items.bl-panel-items > div > div {
   flex-grow: 1;
   text-align: center;
   margin-bottom: 40px;
+  width: 33.333%;
 }
 
 .bl-benefit > h4 {
@@ -688,6 +693,7 @@ div#bl-panel-work-items.bl-panel-items > div > div {
 	.bl-benefits {
 		display: block;
 	}
+	.bl-benefit,
 	.lead {
 		width: 100%;
 	}
