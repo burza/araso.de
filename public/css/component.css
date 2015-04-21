@@ -42,6 +42,10 @@ body {
 
 }
 
+body.datenschutz {
+	color: #444;
+}
+
 a {
 	color: #f2ede3;
 	text-decoration: none;
@@ -49,6 +53,10 @@ a {
 	-moz-transition: color .2s ease .0;
 	-webkit-transition: color .2s ease .0;
 	transition: color .2s ease .0;
+}
+
+body.datenschutz a {
+	color: #444;
 }
 
 a:hover {
@@ -190,8 +198,9 @@ div.bl-panel-items > div > div {
 }
 
 .bl-content h2 {
+	line-height: 1em;
 	letter-spacing: 1px;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 400;
 	margin: 0 0 20px 0;
 }
@@ -404,6 +413,11 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #22B573;
 }
 
+.bl-main.bl-datenschutz > section:first-child.bl-expand {
+	background: #CCCCCC;
+}
+
+
 .bl-main.bl-expand-item > section:not(.bl-expand),
 .bl-main.bl-expand-item > section.bl-scale-down {
 	-webkit-transform: scale(0.5);
@@ -520,12 +534,17 @@ div#bl-panel-work-items.bl-panel-items > div > div {
 	margin-bottom: 40px;
 }
 
+.lead:first-child {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
 .lead a {
 	font-weight: 100;
 	border-bottom: 1px solid #f2ede3;
 }
 
-.lead > h1 {
+.lead > h1,
+.lead > h2 {
 	text-transform: uppercase;
 	font-size: 32px;
 	line-height: 1.3em;
@@ -567,7 +586,6 @@ div#bl-panel-work-items.bl-panel-items > div > div {
   flex-direction: row;
   -webkit-flex-direction: row;
 	margin-bottom: 60px;
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 	border-bottom: 1px solid rgba(0,0,0,.1);
@@ -613,7 +631,7 @@ div#bl-panel-work-items.bl-panel-items > div > div {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  color: rgba(0,0,0,.1);
+  color: rgba(0,0,0,.25);
   margin: 10px 0;
   text-align: center;
   width: 80%;
