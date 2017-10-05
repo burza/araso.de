@@ -13,11 +13,8 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'thin'
 
 # Deploy with Capistrano
-gem 'capistrano'
-
-group :production do
-	gem 'rvm-capistrano', '~> 1.3.0'
-end
+gem "capistrano", '2.13.5'
+gem 'rvm-capistrano', '1.2.7', require: false
 
 # To use debugger
 # gem 'ruby-debug'

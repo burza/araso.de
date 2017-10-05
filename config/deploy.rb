@@ -1,33 +1,32 @@
 set :application, "araso.de"
 
 set :scm, :git
-set :user, 'vu2030'
-set :group, 'www-data'
+set :user, 'master'
+set :group, 'master'
 
 set :repository, "git@github.com:burza/#{application}.git"
 #set :repository, "git@git.assembla.com:araso.git"
 
 set :rails_root, "#{File.expand_path(File.dirname(__FILE__)+ '/..')}"
 
-set :branch, 'mobile'
+set :branch, 'master'
 
 set :rails_env, :production
 
-set :deploy_to, "/var/www/virtual/araso.de/htdocs"
+set :deploy_to, "/home/master/araso"
 set :keep_releases, 5
 set :no_release, false
 set :use_sudo, false
 
-role :app, "#{application}"
-role :web, "#{application}"
-role :db, "#{application}", :primary => true
+role :app, "5.9.97.166"
+role :web, "5.9.97.166"
+role :db, "5.9.97.166", :primary => true
 
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
+set :rvm_ruby_string, 'ruby-1.9.3-p551@araso.de'
+set :rvm_type, :user
 require "bundler/capistrano"
-
-set :rvm_ruby_string, '1.9.2-p290@araso.de'
-set :rvm_type, :system
 
 desc "Link shared files"
 task :link_shared_files do
@@ -37,27 +36,28 @@ task :link_shared_files do
 end
 
 namespace :deploy do
-  %w(start stop restart).each do |action| 
-     desc "#{action} the Thin processes"  
+  %w(start stop restart).each do |action|
+     desc "#{action} the Thin processes"
      task action.to_sym do
        find_and_execute_task("thin:#{action}")
     end
   end
-  
+
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "cd #{release_path} && bundle install"
+    #run "cd #{release_path} && bundle install"
+    run "cd #{deploy_to}/current && bundle install"
   end
 end
 
-namespace :thin do  
-  %w(start stop restart).each do |action| 
-  desc "#{action} the app's Thin Cluster"  
-    task action.to_sym, :roles => :app do  
-      run "thin #{action} -c #{deploy_to}/current -C #{deploy_to}/current/config/thin.yml" 
+namespace :thin do
+  %w(start stop restart).each do |action|
+  desc "#{action} the app's Thin Cluster"
+    task action.to_sym, :roles => :app do
+      run "thin #{action} -c #{deploy_to}/current -C #{deploy_to}/current/config/thin.yml"
     end
   end
 end
 
 after "deploy:update_code", :link_shared_files
-# after "deploy:update_code", "deploy:bundle_install"
+before :link_shared_files, "deploy:bundle_install"
