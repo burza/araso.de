@@ -9,7 +9,7 @@ set :repository, "git@github.com:burza/#{application}.git"
 
 set :rails_root, "#{File.expand_path(File.dirname(__FILE__)+ '/..')}"
 
-set :branch, 'master'
+set :branch, 'mobile'
 
 set :rails_env, :production
 
