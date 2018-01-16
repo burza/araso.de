@@ -54,10 +54,9 @@ namespace :thin do
   %w(start stop restart).each do |action|
   desc "#{action} the app's Thin Cluster"
     task action.to_sym, :roles => :app do
-      run "thin #{action} -c #{deploy_to}/current -C #{deploy_to}/current/config/thin.yml"
+      run "cd #{deploy_to}/current && bundle exec thin #{action} -c #{deploy_to}/current -C #{deploy_to}/current/config/thin.yml"
     end
   end
 end
 
 after "deploy:update_code", :link_shared_files
-before :link_shared_files, "deploy:bundle_install"
